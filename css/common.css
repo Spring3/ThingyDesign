@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "JSlim";
+  src: url("../fonts/Slim Joe.otf"); }
+.margined {
+  margin-top: 10px; }
+
+.centered {
+  text-align: center; }
+
+/*# sourceMappingURL=common.css.map */

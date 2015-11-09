@@ -1,3 +1,73 @@
+@font-face {
+  font-family: "JSlim";
+  src: url("../fonts/Slim Joe.otf"); }
+.margined {
+  margin-top: 10px; }
 
+.centered {
+  text-align: center; }
+
+html {
+  background-color: white; }
+
+header .label .row .logo {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%; }
+  header .label .row .logo .img-div {
+    background-image: url("../img/logo.svg");
+    background-size: cover;
+    background-position-y: +40%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: solid 3px #424242; }
+header .label .row h4 {
+  font-family: "JSlim";
+  font-size: 30px;
+  color: #424242;
+  font-weight: 800; }
+header .label .row .hline {
+  height: 1px;
+  width: 260px;
+  margin: 0 auto;
+  background-color: #424242; }
+header .label .row .caption {
+  color: #424242;
+  font-family: "JSlim";
+  font-size: 16px;
+  font-weight: 800; }
+
+main .fluid-container .row .menu {
+  display: block; }
+  main .fluid-container .row .menu .menu-list {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0; }
+    main .fluid-container .row .menu .menu-list .menu-item {
+      display: inline;
+      line-height: 2;
+      font-family: "Raleway";
+      font-size: 16px;
+      font-weight: 400;
+      border-top: solid 1px #424242;
+      border-bottom: solid 1px #424242; }
+    main .fluid-container .row .menu .menu-list .cart a {
+      display: inline-block; }
+      main .fluid-container .row .menu .menu-list .cart a .bag {
+        display: inline-block;
+        background-image: url("../img/bag.svg");
+        background-size: cover;
+        background-image-color: #8BC34A;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        line-height: 2;
+        color: white;
+        font-size: 14px; }
+        main .fluid-container .row .menu .menu-list .cart a .bag p {
+          position: relative;
+          top: 5px; }
 
 /*# sourceMappingURL=index.css.map */

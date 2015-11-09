@@ -1,0 +1,22 @@
+$col-backg-main : white;  //main background color for html section
+$col-grey : #424242;
+$col-success: #8BC34A;
+$font-main : "Raleway";
+$font-head : "JSlim";
+$font-size : 20px;
+$font-bg-size : 30px;
+$font-sm-size : 16px;
+
+//fonts
+@font-face {
+  font-family: "JSlim";
+  src: url("../fonts/Slim Joe.otf");
+}
+
+.margined{
+  margin-top: 10px;
+}
+
+.centered{
+  text-align: center;
+}
