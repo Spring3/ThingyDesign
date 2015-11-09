@@ -65,6 +65,7 @@ main{
             border-bottom: solid 1px $col-grey;
           }
           .cart{
+            height:34px;
             a{
               display:inline-block;
               .bag{
@@ -75,12 +76,13 @@ main{
                 width: 30px;
                 height: 30px;
                 position:relative;
+                top: -2px;
                 line-height: 2;
                 color:white;
                 font-size: $font-sm-size - 2;
                 p{
                   position:relative;
-                  top: 5px;
+                  top: 2px;
                 }
               }
             }

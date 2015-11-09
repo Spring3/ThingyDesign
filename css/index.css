@@ -53,21 +53,24 @@ main .fluid-container .row .menu {
       font-weight: 400;
       border-top: solid 1px #424242;
       border-bottom: solid 1px #424242; }
-    main .fluid-container .row .menu .menu-list .cart a {
-      display: inline-block; }
-      main .fluid-container .row .menu .menu-list .cart a .bag {
-        display: inline-block;
-        background-image: url("../img/bag.svg");
-        background-size: cover;
-        background-image-color: #8BC34A;
-        width: 30px;
-        height: 30px;
-        position: relative;
-        line-height: 2;
-        color: white;
-        font-size: 14px; }
-        main .fluid-container .row .menu .menu-list .cart a .bag p {
+    main .fluid-container .row .menu .menu-list .cart {
+      height: 34px; }
+      main .fluid-container .row .menu .menu-list .cart a {
+        display: inline-block; }
+        main .fluid-container .row .menu .menu-list .cart a .bag {
+          display: inline-block;
+          background-image: url("../img/bag.svg");
+          background-size: cover;
+          background-image-color: #6F9971;
+          width: 30px;
+          height: 30px;
           position: relative;
-          top: 5px; }
+          top: -2px;
+          line-height: 2;
+          color: white;
+          font-size: 14px; }
+          main .fluid-container .row .menu .menu-list .cart a .bag p {
+            position: relative;
+            top: 2px; }
 
 /*# sourceMappingURL=index.css.map */
