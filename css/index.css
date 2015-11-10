@@ -7,7 +7,7 @@
 .centered {
   text-align: center; }
 
-.margined-2 {
+.margined-2, main .fluid-container .row .items-container .item {
   margin-top: 20px; }
 
 .margined-3 {
@@ -82,5 +82,17 @@ main .fluid-container .row .menu {
 main .fluid-container .row .search .searchBar form .form-group .input-search {
   width: 60%;
   display: inline; }
+main .fluid-container .row .items-container {
+  max-width: 90%;
+  margin: 0 auto; }
+  main .fluid-container .row .items-container .item .image .thumbnail {
+    position: relative; }
+    main .fluid-container .row .items-container .item .image .thumbnail .badgie {
+      position: absolute;
+      color: white;
+      font-size: 20px;
+      font-family: "Raleway";
+      width: 50%;
+      background-color: #F48FB1; }
 
 /*# sourceMappingURL=index.css.map */

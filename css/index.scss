@@ -103,6 +103,36 @@ main{
           } //form
         } //searchBar
       } //search
+
+      .items-container{
+        max-width: 90%;
+        margin: 0 auto;
+        .item{
+          @extend .margined-2;
+          .image{
+            .thumbnail{
+              position: relative;
+              .badgie{
+                position: absolute;
+                color: white;
+                font-size: $font-size;
+                font-family: $font-main;
+                width:50%;
+                background-color: #F48FB1;
+
+              }
+            } //thumbnail
+          } //image
+          .info{
+            p.price{
+
+            } //price
+            p{
+
+            }
+          } //info
+        } //item
+      } //items-container
     } //row
   } //fluid-container
 }
