@@ -7,6 +7,12 @@
 .centered {
   text-align: center; }
 
+.margined-2 {
+  margin-top: 20px; }
+
+.margined-3 {
+  margin-top: 30px; }
+
 html {
   background-color: white; }
 
@@ -40,7 +46,8 @@ header .label .row .caption {
   font-weight: 800; }
 
 main .fluid-container .row .menu {
-  display: block; }
+  display: block;
+  padding: 0; }
   main .fluid-container .row .menu .menu-list {
     list-style-type: none;
     margin: 0 auto;
@@ -72,5 +79,8 @@ main .fluid-container .row .menu {
           main .fluid-container .row .menu .menu-list .cart a .bag p {
             position: relative;
             top: 2px; }
+main .fluid-container .row .search .searchBar form .form-group .input-search {
+  width: 60%;
+  display: inline; }
 
 /*# sourceMappingURL=index.css.map */
