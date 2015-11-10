@@ -1,13 +1,13 @@
 @font-face {
   font-family: "JSlim";
   src: url("../fonts/Slim Joe.otf"); }
-.margined {
+.margined, main .fluid-container .row .items-container .item {
   margin-top: 10px; }
 
 .centered {
   text-align: center; }
 
-.margined-2, main .fluid-container .row .items-container .item {
+.margined-2 {
   margin-top: 20px; }
 
 .margined-3 {
@@ -85,6 +85,12 @@ main .fluid-container .row .search .searchBar form .form-group .input-search {
 main .fluid-container .row .items-container {
   max-width: 90%;
   margin: 0 auto; }
+  main .fluid-container .row .items-container .dropdown-container {
+    height: 40px;
+    margin: 0 auto;
+    max-width: 97%; }
+    main .fluid-container .row .items-container .dropdown-container .dropdown {
+      float: right; }
   main .fluid-container .row .items-container .item .image .thumbnail {
     position: relative; }
     main .fluid-container .row .items-container .item .image .thumbnail .badgie {
@@ -94,5 +100,18 @@ main .fluid-container .row .items-container {
       font-family: "Raleway";
       width: 50%;
       background-color: #F48FB1; }
+  main .fluid-container .row .items-container .item .info p {
+    font-size: 16px;
+    font-family: "Raleway"; }
+  main .fluid-container .row .items-container .item .info p.price-old {
+    position: relative;
+    right: 5px;
+    display: inline-block;
+    color: #E0E0E0;
+    text-decoration: line-through; }
+  main .fluid-container .row .items-container .item .info p.price {
+    display: inline-block;
+    color: #9E9E9E;
+    font-size: 14px; }
 
 /*# sourceMappingURL=index.css.map */

@@ -105,10 +105,18 @@ main{
       } //search
 
       .items-container{
-        max-width: 90%;
+        max-width: $max-width;
         margin: 0 auto;
+        .dropdown-container{
+          height: 40px;
+          margin: 0 auto;
+          max-width: 97%;
+          .dropdown{
+            float: right;
+          } //dropdown
+        }
         .item{
-          @extend .margined-2;
+          @extend .margined;
           .image{
             .thumbnail{
               position: relative;
@@ -124,12 +132,22 @@ main{
             } //thumbnail
           } //image
           .info{
-            p.price{
-
-            } //price
             p{
-
+              font-size: $font-sm-size;
+              font-family: $font-main;
             }
+            p.price-old{
+              position: relative;
+              right: 5px;
+              display:inline-block;
+              color: $col-grey-light-2;
+              text-decoration: line-through;
+            }
+            p.price{
+              display:inline-block;
+              color: $col-grey-light;
+              font-size: $font-xs-size;
+            } //price
           } //info
         } //item
       } //items-container

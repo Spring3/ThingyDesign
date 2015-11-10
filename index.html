@@ -23,7 +23,7 @@
 
   </header>
 
-  <main>
+  <main class="margined-2">
     <div class="fluid-container">
       <div class="row">
         <div class="menu col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
@@ -57,23 +57,25 @@
       </div>
 
       <div class="row">
-        <div class="items col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-          <div class="filters margined-2 row">
-            <div class="dropdown col-xs-offset-1">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Sort by
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Cheap first</a></li>
-                <li><a href="#">Expencive first</a></li>
-                <li><a href="#">New first</a></li>
-                <li><a href="#">By rating</a></li>
-              </ul>
-            </div>
-          </div>
+        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
 
           <div class="items-container row">
+            <div class="dropdown-container">
+              <div class="dropdown">
+                <span>Sorting:</span>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Sort by
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Cheap first</a></li>
+                  <li><a href="#">Expencive first</a></li>
+                  <li><a href="#">New first</a></li>
+                  <li><a href="#">By rating</a></li>
+                </ul>
+              </div>
+            </div>
+
             <div class="item col-xs-12 col-sm-6 col-md-3">
               <div class="image">
                 <a class="thumbnail" href="#">
@@ -83,6 +85,7 @@
               </div>
               <div class="info">
                 <p>Item name</p>
+                <p class="price-old"></p>
                 <p class="price">$19.99</p>
               </div>
             </div>
@@ -96,7 +99,8 @@
               </div>
               <div class="info">
                 <p>Item name</p>
-                <p class="price">$19.99</p>
+                <p class="price-old">$19.99</p>
+                <p class="price">$10.99</p>
               </div>
             </div>
 
@@ -109,6 +113,7 @@
               </div>
               <div class="info">
                 <p>Item name</p>
+                <p class="price-old"></p>
                 <p class="price">$19.99</p>
               </div>
             </div>
@@ -122,6 +127,7 @@
               </div>
               <div class="info">
                 <p>Item name</p>
+                <p class="price-old"></p>
                 <p class="price">$19.99</p>
               </div>
             </div>
