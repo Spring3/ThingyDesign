@@ -2,7 +2,6 @@ figure {
 	margin: 0;
 	position: relative;
   overflow: hidden;
-  display: inline-block;
 }
 
 figcaption {

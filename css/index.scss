@@ -36,8 +36,8 @@ header{
         background-color: $col-grey;
       } //hline
       .caption{
-
         -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         color: $col-grey;
         font-family: $font-head;
         font-size: $font-sm-size;
@@ -146,7 +146,7 @@ main{
                   img{
                     position: relative;
                     max-height: 373px;
-                    width:auto;
+                    width:100%;
                     display:inline-block;
                   } //img
                 }

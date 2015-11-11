@@ -58,6 +58,7 @@ header .label .row .hline {
   background-color: #424242; }
 header .label .row .caption {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #424242;
   font-family: "JSlim";
   font-size: 16px;
@@ -131,7 +132,7 @@ main {
         main .fluid-container .row .items-section .main-section .item .image .thumbnail .figure img {
           position: relative;
           max-height: 373px;
-          width: auto;
+          width: 100%;
           display: inline-block; }
     main .fluid-container .row .items-section .main-section .item .info {
       text-align: left;
