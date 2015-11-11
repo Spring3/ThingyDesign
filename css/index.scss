@@ -65,11 +65,15 @@ main{
             font-weight: 400;
             border-top: solid 1px $col-grey;
             border-bottom: solid 1px $col-grey;
+            a{
+              display:block;
+            }
           } //menu-item
           .cart{
+            display:block;
             height:34px;
             a{
-              display:inline-block;
+              display:block;
               .bag{
                 display:inline-block;
                 background-image: url("../img/bag.svg");
