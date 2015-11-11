@@ -121,11 +121,13 @@ main{
             @extend .margined-3;
             .image{
               @extend .centered;
+              position: relative;
               .thumbnail{
                 position: relative;
                 display:inline-block;
                 margin : 0;
                 .badgie{
+                  z-index: 2;
                   position: absolute;
                   color: white;
                   font-size: $font-size;
@@ -135,9 +137,10 @@ main{
 
                 }
                 img{
+                  position: relative;
                   max-height: 373px;
                   display:inline-block;
-                }
+                } //img
               } //thumbnail
             } //image
             .info{

@@ -107,20 +107,24 @@ main {
       max-width: 97%; }
       main .fluid-container .row .items-section .main-section .dropdown-container .dropdown {
         float: right; }
-    main .fluid-container .row .items-section .main-section .item .image .thumbnail {
-      position: relative;
-      display: inline-block;
-      margin: 0; }
-      main .fluid-container .row .items-section .main-section .item .image .thumbnail .badgie {
-        position: absolute;
-        color: white;
-        font-size: 20px;
-        font-family: "Raleway";
-        padding: 0 20px 0 20px;
-        background-color: #F48FB1; }
-      main .fluid-container .row .items-section .main-section .item .image .thumbnail img {
-        max-height: 373px;
-        display: inline-block; }
+    main .fluid-container .row .items-section .main-section .item .image {
+      position: relative; }
+      main .fluid-container .row .items-section .main-section .item .image .thumbnail {
+        position: relative;
+        display: inline-block;
+        margin: 0; }
+        main .fluid-container .row .items-section .main-section .item .image .thumbnail .badgie {
+          z-index: 2;
+          position: absolute;
+          color: white;
+          font-size: 20px;
+          font-family: "Raleway";
+          padding: 0 20px 0 20px;
+          background-color: #F48FB1; }
+        main .fluid-container .row .items-section .main-section .item .image .thumbnail img {
+          position: relative;
+          max-height: 373px;
+          display: inline-block; }
     main .fluid-container .row .items-section .main-section .item .info {
       text-align: left;
       max-width: 311px;
