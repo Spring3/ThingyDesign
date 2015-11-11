@@ -3,12 +3,15 @@ $col-grey : #424242;
 $col-grey-light: #9E9E9E;
 $col-grey-light-2: #E0E0E0;
 $col-success: #6F9971;
+$col-pink: #F48FB1;
+$col-pink-hover: #F06292;
 $font-main : "Raleway";
 $font-head : "JSlim";
 $font-size : 20px;
 $font-bg-size : 30px;
 $font-sm-size : 16px;
 $font-xs-size : 14px;
+$font-copyrights-size : 12px;
 $max-width: 90%;
 
 //fonts
@@ -41,4 +44,12 @@ $max-width: 90%;
   display: none;
   visibility: hidden;
   position: absolute !important;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }

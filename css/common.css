@@ -21,4 +21,10 @@
   visibility: hidden;
   position: absolute !important; }
 
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
 /*# sourceMappingURL=common.css.map */
