@@ -36,6 +36,8 @@ header{
         background-color: $col-grey;
       } //hline
       .caption{
+
+        -webkit-font-smoothing: antialiased;
         color: $col-grey;
         font-family: $font-head;
         font-size: $font-sm-size;
@@ -140,11 +142,14 @@ main{
                   background-color: #F48FB1;
 
                 }
-                img{
-                  position: relative;
-                  max-height: 373px;
-                  display:inline-block;
-                } //img
+                .figure{
+                  img{
+                    position: relative;
+                    max-height: 373px;
+                    width:auto;
+                    display:inline-block;
+                  } //img
+                }
               } //thumbnail
             } //image
             .info{
@@ -185,6 +190,26 @@ footer{
     p{
       font-family: $font-main;
       font-size: $font-copyrights-size;
+    }
+  }
+  .social{
+    list-style-type: none;
+    text-align:right;
+    li{
+      display:inline-block;
+      border-radius: 50%;
+      border: solid 2px $col-grey;
+      text-align: center;
+      a{
+        color: $col-grey;
+        width: 40px;
+        height: 40px;
+        display:block;
+        i{
+          position: relative;
+          top: 5px;
+        }
+      }
     }
   }
 }

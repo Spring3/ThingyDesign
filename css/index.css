@@ -27,6 +27,9 @@
 .right {
   float: right; }
 
+.space {
+  height: 20px; }
+
 html {
   background-color: white; }
 
@@ -54,6 +57,7 @@ header .label .row .hline {
   margin: 0 auto;
   background-color: #424242; }
 header .label .row .caption {
+  -webkit-font-smoothing: antialiased;
   color: #424242;
   font-family: "JSlim";
   font-size: 16px;
@@ -124,9 +128,10 @@ main {
           font-family: "Raleway";
           padding: 0 20px 0 20px;
           background-color: #F48FB1; }
-        main .fluid-container .row .items-section .main-section .item .image .thumbnail img {
+        main .fluid-container .row .items-section .main-section .item .image .thumbnail .figure img {
           position: relative;
           max-height: 373px;
+          width: auto;
           display: inline-block; }
     main .fluid-container .row .items-section .main-section .item .info {
       text-align: left;
@@ -151,5 +156,21 @@ main {
 footer .copyrights p {
   font-family: "Raleway";
   font-size: 12px; }
+footer .social {
+  list-style-type: none;
+  text-align: right; }
+  footer .social li {
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 2px #424242;
+    text-align: center; }
+    footer .social li a {
+      color: #424242;
+      width: 40px;
+      height: 40px;
+      display: block; }
+      footer .social li a i {
+        position: relative;
+        top: 5px; }
 
 /*# sourceMappingURL=index.css.map */
