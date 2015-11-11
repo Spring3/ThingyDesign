@@ -36,3 +36,9 @@ $max-width: 90%;
 .row{
   margin: 0;
 }
+
+.invisible{
+  display: none;
+  visibility: hidden;
+  position: absolute !important;
+}
