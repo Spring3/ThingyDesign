@@ -1,7 +1,7 @@
 @font-face {
   font-family: "JSlim";
   src: url("../fonts/Slim Joe.otf"); }
-.margined, main .fluid-container .row .items-container .item {
+.margined, main .fluid-container .row .items-section .items-container .item {
   margin-top: 10px; }
 
 .centered {
@@ -15,6 +15,11 @@
 
 .row {
   margin: 0; }
+
+.invisible {
+  display: none;
+  visibility: hidden;
+  position: absolute !important; }
 
 html {
   background-color: white; }
@@ -85,36 +90,44 @@ main .fluid-container .row .menu {
 main .fluid-container .row .search .searchBar form .form-group .input-search {
   width: 60%;
   display: inline; }
-main .fluid-container .row .items-container {
+main .fluid-container .row .items-section .items-container {
   max-width: 90%;
   margin: 0 auto; }
-  main .fluid-container .row .items-container .dropdown-container {
+  main .fluid-container .row .items-section .items-container .dropdown-container {
     height: 40px;
     margin: 0 auto;
     max-width: 97%; }
-    main .fluid-container .row .items-container .dropdown-container .dropdown {
+    main .fluid-container .row .items-section .items-container .dropdown-container .dropdown {
       float: right; }
-  main .fluid-container .row .items-container .item .image .thumbnail {
-    position: relative; }
-    main .fluid-container .row .items-container .item .image .thumbnail .badgie {
+  main .fluid-container .row .items-section .items-container .item .image .thumbnail {
+    position: relative;
+    display: inline-block;
+    margin: 0; }
+    main .fluid-container .row .items-section .items-container .item .image .thumbnail .badgie {
       position: absolute;
       color: white;
       font-size: 20px;
       font-family: "Raleway";
       width: 50%;
       background-color: #F48FB1; }
-  main .fluid-container .row .items-container .item .info p {
-    font-size: 16px;
-    font-family: "Raleway"; }
-  main .fluid-container .row .items-container .item .info p.price-old {
-    position: relative;
-    right: 5px;
-    display: inline-block;
-    color: #E0E0E0;
-    text-decoration: line-through; }
-  main .fluid-container .row .items-container .item .info p.price {
-    display: inline-block;
-    color: #9E9E9E;
-    font-size: 14px; }
+    main .fluid-container .row .items-section .items-container .item .image .thumbnail img {
+      max-height: 373px; }
+  main .fluid-container .row .items-section .items-container .item .info {
+    text-align: left; }
+    main .fluid-container .row .items-section .items-container .item .info .item-name {
+      margin: 0 auto;
+      font-size: 16px;
+      font-family: "Raleway"; }
+    main .fluid-container .row .items-section .items-container .item .info .price-container .price-old {
+      position: relative;
+      margin: 0 5px 0 0;
+      display: inline-block;
+      color: #E0E0E0;
+      text-decoration: line-through; }
+    main .fluid-container .row .items-section .items-container .item .info .price-container .price {
+      margin: 0 auto;
+      display: inline-block;
+      color: #9E9E9E;
+      font-size: 14px; }
 
 /*# sourceMappingURL=index.css.map */
