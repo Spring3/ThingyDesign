@@ -50,19 +50,23 @@ header .label .row h4 {
   font-family: "JSlim";
   font-size: 30px;
   color: #424242;
-  font-weight: 800; }
+  font-weight: 800;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
 header .label .row .hline {
   height: 1px;
   width: 260px;
   margin: 0 auto;
   background-color: #424242; }
 header .label .row .caption {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   color: #424242;
   font-family: "JSlim";
-  font-size: 16px;
-  font-weight: 800; }
+  font-size: 17px;
+  font-weight: 1900;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
 
 main {
   font-family: "Raleway"; }

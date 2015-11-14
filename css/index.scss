@@ -27,6 +27,9 @@ header{
         font-size: $font-bg-size;
         color: $col-grey;
         font-weight: 800;
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
       } //h4
 
       .hline{
@@ -36,12 +39,13 @@ header{
         background-color: $col-grey;
       } //hline
       .caption{
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
         color: $col-grey;
         font-family: $font-head;
-        font-size: $font-sm-size;
-        font-weight: 800;
+        font-size: 17px;
+        font-weight: 1900;
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
       }
     } //row
   } //label
