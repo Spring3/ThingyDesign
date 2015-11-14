@@ -167,6 +167,15 @@ main{
                 margin: 0 auto;
                 font-size: $font-sm-size;
                 font-family: $font-main;
+                a{
+                  display:block;
+                  width:100%;
+                  height: 100%;
+                  color: $col-grey !important;
+                  &:hover, &:active, &:visited{
+                    text-decoration: none;
+                  }
+                }
               }
               .price-container{
 

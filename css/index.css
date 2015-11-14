@@ -4154,6 +4154,13 @@ main {
         margin: 0 auto;
         font-size: 16px;
         font-family: "Raleway"; }
+        main .fluid-container .row .items-section .main-section .item .info .item-name a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          color: #424242 !important; }
+          main .fluid-container .row .items-section .main-section .item .info .item-name a:hover, main .fluid-container .row .items-section .main-section .item .info .item-name a:active, main .fluid-container .row .items-section .main-section .item .info .item-name a:visited {
+            text-decoration: none; }
       main .fluid-container .row .items-section .main-section .item .info .price-container .price-old {
         position: relative;
         margin: 0 5px 0 0;
