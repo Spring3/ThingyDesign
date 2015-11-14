@@ -73,6 +73,9 @@ main{
             border-bottom: solid 1px $col-grey;
             a{
               display:block;
+              &:hover{
+                text-decoration: none;
+              }
             }
           } //menu-item
           .cart{
@@ -215,5 +218,27 @@ footer{
         }
       }
     }
+  }
+}
+
+//Hover .css classes overriding
+.hvr-ripple-out{
+  &:before {
+    border: $col-grey solid 1px;
+    border-radius: 50px;
+  }
+}
+
+.hvr-underline-reveal-green{
+  @extend .hvr-underline-reveal;
+  &:before{
+    background: $col-success;
+  }
+}
+
+.hvr-shutter-in-vertical{
+  background: $col-pink !important;
+  &:before{
+    background: white;
   }
 }
