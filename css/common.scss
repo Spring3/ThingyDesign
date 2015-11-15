@@ -12,9 +12,13 @@ $font-bg-size : 30px;
 $font-size : 20px;
 $font-sm-size : 16px;
 $font-xs-size : 14px;
+$font-tiny-size : 12px;
 $font-copyrights-size : 12px;
-$max-width: 90%;
+$max-width: 90%;  //for items-section
 
+.modal {
+  border-radius: 0;
+}
 //fonts
 @font-face {
   font-family: "JSlim";
@@ -57,4 +61,8 @@ $max-width: 90%;
 
 .space {
   height: 20px;
+}
+
+.clear{
+  clear :both;
 }

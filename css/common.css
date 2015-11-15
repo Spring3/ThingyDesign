@@ -4004,6 +4004,9 @@
     width: 25px;
     height: 25px; }
 
+.modal {
+  border-radius: 0; }
+
 @font-face {
   font-family: "JSlim";
   src: url("../fonts/Slim Joe.otf"); }
@@ -4035,5 +4038,8 @@
 
 .space {
   height: 20px; }
+
+.clear {
+  clear: both; }
 
 /*# sourceMappingURL=common.css.map */
