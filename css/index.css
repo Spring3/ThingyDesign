@@ -4098,8 +4098,9 @@ main {
         border-top: solid 1px #424242;
         border-bottom: solid 1px #424242; }
         main .fluid-container .row .menu .menu-list .menu-item a {
-          display: block; }
-          main .fluid-container .row .menu .menu-list .menu-item a:hover {
+          display: block;
+          text-decoration: none; }
+          main .fluid-container .row .menu .menu-list .menu-item a:hover, main .fluid-container .row .menu .menu-list .menu-item a:active, main .fluid-container .row .menu .menu-list .menu-item a:visited {
             text-decoration: none; }
       main .fluid-container .row .menu .menu-list .cart {
         display: block;
@@ -4200,9 +4201,7 @@ footer .social {
         top: 5px; }
 
 body .modal .modal-dialog .modal-content .modal-body .modal-left #current-item-image {
-  width: auto;
-  max-height: 450px;
-  max-width: 450px; }
+  width: 100%; }
 body .modal .modal-dialog .modal-content .modal-body .modal-left .image-list {
   list-style-type: none;
   padding: 0;

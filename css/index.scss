@@ -73,7 +73,8 @@ main{
             border-bottom: solid 1px $col-grey;
             a{
               display:block;
-              &:hover{
+              text-decoration: none;
+              &:hover, &:active, &:visited{
                 text-decoration: none;
               }
             }
@@ -238,9 +239,7 @@ body{
         .modal-body{
           .modal-left{
             #current-item-image{
-              width:auto;
-              max-height: 450px;
-              max-width: 450px;
+              width: 100%;
             }
 
             .image-list{
