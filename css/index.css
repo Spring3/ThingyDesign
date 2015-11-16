@@ -4252,6 +4252,16 @@ body .modal .modal-dialog .modal-content .modal-body .modal-right #addToCart {
   color: white;
   font-size: 16px;
   font-family: "Raleway"; }
+body .modal .modal-dialog .modal-content .modal-footer .closeBtn {
+  border-radius: 0;
+  padding: 12px 15px;
+  width: 100px;
+  border-color: #F48FB1;
+  border-width: 2px;
+  font-family: "Raleway";
+  font-size: 16px; }
+  body .modal .modal-dialog .modal-content .modal-footer .closeBtn:hover {
+    background-color: #F48FB1 !important; }
 
 .hvr-ripple-out:before {
   border: #424242 solid 1px;

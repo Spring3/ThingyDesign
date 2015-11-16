@@ -313,6 +313,20 @@ body{
             } //addToCart
           } //modal-right
         } //modal-body
+        .modal-footer{
+          .closeBtn{
+            border-radius: 0;
+            padding: 12px 15px;
+            width: 100px;
+            border-color: $col-pink;
+            border-width: 2px;
+            font-family: $font-main;
+            font-size: $font-sm-size;
+            &:hover{
+              background-color: $col-pink !important;
+            }
+          } //closeBtn
+        } //modal-footer
       } //modal-content
     } //modal-dialog
   } //modal
