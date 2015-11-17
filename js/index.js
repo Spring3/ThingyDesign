@@ -18,6 +18,7 @@ $(document).ready(function(){
 
   //click on the Read More sliding button
   $('.readMore').click(function(event){
+    event.preventDefault();
     $('#testModal').modal('show');
   });
 
