@@ -2156,7 +2156,7 @@
     border-width: 4px; }
 
 /* Underline Reveal */
-.hvr-underline-reveal {
+.hvr-underline-reveal, .hvr-underline-reveal-green {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -2167,7 +2167,7 @@
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden; }
-  .hvr-underline-reveal:before {
+  .hvr-underline-reveal:before, .hvr-underline-reveal-green:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -2184,7 +2184,7 @@
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out; }
-  .hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  .hvr-underline-reveal:hover:before, .hvr-underline-reveal-green:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal-green:focus:before, .hvr-underline-reveal:active:before, .hvr-underline-reveal-green:active:before {
     -webkit-transform: translateY(0);
     transform: translateY(0); }
 
@@ -4022,6 +4022,9 @@
 .margined-3 {
   margin-top: 30px; }
 
+.margined-xxl {
+  margin-top: 100px; }
+
 .row {
   margin: 0; }
 
@@ -4041,5 +4044,118 @@
 
 .clear {
   clear: both; }
+
+html {
+  background-color: white; }
+
+header .label .row .logo {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%; }
+  header .label .row .logo .img-div {
+    background-image: url("../img/logo.svg");
+    background-size: cover;
+    background-position-y: +40%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: solid 3px #424242; }
+header .label .row h4 {
+  font-family: "JSlim";
+  font-size: 30px;
+  color: #424242;
+  font-weight: 800;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+header .label .row .hline {
+  height: 1px;
+  width: 260px;
+  margin: 0 auto;
+  background-color: #424242; }
+header .label .row .caption {
+  color: #424242;
+  font-family: "JSlim";
+  font-size: 17px;
+  font-weight: 1900;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+main {
+  font-family: "Raleway"; }
+  main .fluid-container .row .menu {
+    display: block;
+    padding: 0; }
+    main .fluid-container .row .menu .menu-list {
+      list-style-type: none;
+      margin: 0 auto;
+      padding: 0; }
+      main .fluid-container .row .menu .menu-list .menu-item {
+        display: inline;
+        line-height: 2;
+        font-family: "Raleway";
+        font-size: 16px;
+        font-weight: 400;
+        border-top: solid 1px #424242;
+        border-bottom: solid 1px #424242; }
+        main .fluid-container .row .menu .menu-list .menu-item a {
+          display: block;
+          text-decoration: none; }
+          main .fluid-container .row .menu .menu-list .menu-item a:hover, main .fluid-container .row .menu .menu-list .menu-item a:active, main .fluid-container .row .menu .menu-list .menu-item a:visited {
+            text-decoration: none; }
+      main .fluid-container .row .menu .menu-list .cart {
+        display: block;
+        height: 34px; }
+        main .fluid-container .row .menu .menu-list .cart a {
+          display: block; }
+          main .fluid-container .row .menu .menu-list .cart a .bag {
+            display: inline-block;
+            background-image: url("../img/bag.svg");
+            background-size: cover;
+            background-image-color: #6F9971;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: -2px;
+            line-height: 2;
+            color: white;
+            font-size: 14px; }
+            main .fluid-container .row .menu .menu-list .cart a .bag p {
+              position: relative;
+              top: 2px; }
+
+footer .copyrights p {
+  font-family: "Raleway";
+  font-size: 12px; }
+footer .social {
+  list-style-type: none;
+  text-align: right; }
+  footer .social li {
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 2px #424242;
+    text-align: center; }
+    footer .social li a {
+      color: #424242;
+      width: 40px;
+      height: 40px;
+      display: block; }
+      footer .social li a i {
+        position: relative;
+        top: 5px; }
+
+.hvr-ripple-out:before {
+  border: #424242 solid 1px;
+  border-radius: 50px; }
+
+.hvr-underline-reveal-green:before {
+  background: #6F9971; }
+
+.hvr-shutter-in-vertical {
+  background: #F48FB1 !important; }
+  .hvr-shutter-in-vertical:before {
+    background: white; }
 
 /*# sourceMappingURL=common.css.map */

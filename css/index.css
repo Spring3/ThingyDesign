@@ -4022,6 +4022,9 @@
 .margined-3, main .fluid-container .row .items-section .main-section .item {
   margin-top: 30px; }
 
+.margined-xxl {
+  margin-top: 100px; }
+
 .row {
   margin: 0; }
 
@@ -4122,6 +4125,41 @@ main {
             main .fluid-container .row .menu .menu-list .cart a .bag p {
               position: relative;
               top: 2px; }
+
+footer .copyrights p {
+  font-family: "Raleway";
+  font-size: 12px; }
+footer .social {
+  list-style-type: none;
+  text-align: right; }
+  footer .social li {
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 2px #424242;
+    text-align: center; }
+    footer .social li a {
+      color: #424242;
+      width: 40px;
+      height: 40px;
+      display: block; }
+      footer .social li a i {
+        position: relative;
+        top: 5px; }
+
+.hvr-ripple-out:before {
+  border: #424242 solid 1px;
+  border-radius: 50px; }
+
+.hvr-underline-reveal-green:before {
+  background: #6F9971; }
+
+.hvr-shutter-in-vertical {
+  background: #F48FB1 !important; }
+  .hvr-shutter-in-vertical:before {
+    background: white; }
+
+main {
+  font-family: "Raleway"; }
   main .fluid-container .row .search .searchBar form .form-group .input-search {
     width: 60%;
     display: inline; }
@@ -4179,26 +4217,6 @@ main {
         display: inline-block;
         color: #9E9E9E;
         font-size: 14px; }
-
-footer .copyrights p {
-  font-family: "Raleway";
-  font-size: 12px; }
-footer .social {
-  list-style-type: none;
-  text-align: right; }
-  footer .social li {
-    display: inline-block;
-    border-radius: 50%;
-    border: solid 2px #424242;
-    text-align: center; }
-    footer .social li a {
-      color: #424242;
-      width: 40px;
-      height: 40px;
-      display: block; }
-      footer .social li a i {
-        position: relative;
-        top: 5px; }
 
 body .modal .modal-dialog .modal-content .modal-body .modal-left #current-item-image {
   width: 100%; }
@@ -4262,17 +4280,5 @@ body .modal .modal-dialog .modal-content .modal-footer .closeBtn {
   font-size: 16px; }
   body .modal .modal-dialog .modal-content .modal-footer .closeBtn:hover {
     background-color: #F48FB1 !important; }
-
-.hvr-ripple-out:before {
-  border: #424242 solid 1px;
-  border-radius: 50px; }
-
-.hvr-underline-reveal-green:before {
-  background: #6F9971; }
-
-.hvr-shutter-in-vertical {
-  background: #F48FB1 !important; }
-  .hvr-shutter-in-vertical:before {
-    background: white; }
 
 /*# sourceMappingURL=index.css.map */
