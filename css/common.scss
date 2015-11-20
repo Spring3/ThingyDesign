@@ -5,6 +5,7 @@ $col-grey-light: #9E9E9E;
 $col-grey-light-2: #E0E0E0;
 $col-success: #6F9971;
 $col-pink: #F48FB1;
+$col-red : #C62828;
 $col-pink-hover: #F06292;
 $font-main : "Raleway";
 $font-head : "JSlim";
@@ -153,9 +154,17 @@ main{
               }
             }
           } //menu-item
+        } //menu-list
+        .top-menu-list{
+          @extend .menu-list;
+
+          .menu-item{
+            border: none;
+          }
           .cart{
-            display:block;
-            height:34px;
+            line-height: 2.5;
+            display:inline-block;
+
             a{
               display:block;
               .bag{
@@ -163,21 +172,30 @@ main{
                 background-image: url("../img/bag.svg");
                 background-size: cover;
                 background-image-color: $col-success;
-                width: 30px;
-                height: 30px;
+                width: 40px;
+                height: 40px;
                 position:relative;
-                top: -2px;
+                top: -10px;
                 line-height: 2;
                 color:white;
                 font-size: $font-sm-size - 2;
                 p{
                   position:relative;
-                  top: 2px;
+                  top: 10px;
                 } //p
               } //bag
             } //a
           } //cart
-        } //menu-list
+          .favourites{
+            @extend .cart;
+            line-height: 2.9;
+            a{
+              text-align:center;
+              padding: 0;
+              top : 0px;
+            }
+          }
+        } //top-menu-list
       } //menu
     }
   }
@@ -221,16 +239,30 @@ footer{
   }
 }
 
-.hvr-underline-reveal-green{
-  @extend .hvr-underline-reveal;
-  &:before{
-    background: $col-success;
-  }
-}
-
 .hvr-shutter-in-vertical{
   background: $col-pink !important;
   &:before{
     background: white;
   }
+}
+
+.hvr-icon-pulse-grow-heart{
+  @extend .hvr-icon-pulse-grow;
+  @extend .hvr-icon-fade;
+  &:before{
+    content: "\f08a";
+    color: $col-red;
+    position:relative;
+    right:-5px;
+  }
+
+  &:hover,
+	&:focus,
+	&:active {
+    &:before{
+      	color: $col-red;
+        content: "\f004";
+    }
+
+	}
 }
