@@ -31,6 +31,7 @@ main{
           }
           .item{
             @extend .margined-3;
+            position:relative;
             .image{
               @extend .centered;
               position: relative;

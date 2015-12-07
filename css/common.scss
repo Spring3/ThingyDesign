@@ -31,6 +31,19 @@ $max-width: 90%;  //for items-section
   margin-top: 10px;
 }
 
+.margined-b{
+  margin-bottom: 5px;
+}
+
+.like{
+    z-index:40;
+}
+
+.like-clicked{
+  color: $col-red;
+  z-index: 40;
+}
+
 .centered{
   text-align: center;
 }
@@ -83,8 +96,8 @@ header{
     .row{
       .logo{
         display:inline-block;
-        height:200px;
-        width: 200px;
+        height:180px;
+        width: 180px;
         border-radius: 50%;
         .img-div{
           background-image: url("../img/logo.svg");
@@ -94,6 +107,7 @@ header{
           height: 100%;
           border-radius: 50%;
           border: solid 3px #424242;
+          margin: 0 auto;
         }
       } //logo
       h4{

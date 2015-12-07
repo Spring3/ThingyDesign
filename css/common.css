@@ -4013,6 +4013,16 @@
 .margined {
   margin-top: 10px; }
 
+.margined-b {
+  margin-bottom: 5px; }
+
+.like {
+  z-index: 40; }
+
+.like-clicked {
+  color: #C62828;
+  z-index: 40; }
+
 .centered {
   text-align: center; }
 
@@ -4060,7 +4070,8 @@ header .label .row .logo {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: solid 3px #424242; }
+    border: solid 3px #424242;
+    margin: 0 auto; }
 header .label .row h4 {
   font-family: "JSlim";
   font-size: 30px;

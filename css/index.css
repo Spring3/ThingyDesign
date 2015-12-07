@@ -4013,6 +4013,16 @@
 .margined {
   margin-top: 10px; }
 
+.margined-b {
+  margin-bottom: 5px; }
+
+.like {
+  z-index: 40; }
+
+.like-clicked {
+  color: #C62828;
+  z-index: 40; }
+
 .centered, main .fluid-container .row .items-section .main-section .item .image {
   text-align: center; }
 
@@ -4050,8 +4060,8 @@ html {
 
 header .label .row .logo {
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   border-radius: 50%; }
   header .label .row .logo .img-div {
     background-image: url("../img/logo.svg");
@@ -4060,7 +4070,8 @@ header .label .row .logo {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: solid 3px #424242; }
+    border: solid 3px #424242;
+    margin: 0 auto; }
 header .label .row h4 {
   font-family: "JSlim";
   font-size: 30px;
@@ -4186,51 +4197,53 @@ main {
       max-width: 97%; }
       main .fluid-container .row .items-section .main-section .dropdown-container .dropdown {
         float: right; }
-    main .fluid-container .row .items-section .main-section .item .image {
+    main .fluid-container .row .items-section .main-section .item {
       position: relative; }
-      main .fluid-container .row .items-section .main-section .item .image .thumbnail {
-        position: relative;
-        display: inline-block;
-        margin: 0; }
-        main .fluid-container .row .items-section .main-section .item .image .thumbnail .badgie {
-          z-index: 2;
-          position: absolute;
-          color: white;
-          font-size: 20px;
-          font-family: "Raleway";
-          padding: 0 20px 0 20px;
-          background-color: #F48FB1; }
-        main .fluid-container .row .items-section .main-section .item .image .thumbnail .figure img {
+      main .fluid-container .row .items-section .main-section .item .image {
+        position: relative; }
+        main .fluid-container .row .items-section .main-section .item .image .thumbnail {
           position: relative;
-          max-height: 373px;
-          width: auto;
-          display: inline-block; }
-    main .fluid-container .row .items-section .main-section .item .info {
-      text-align: left;
-      max-width: 311px;
-      margin: 10px auto 0 auto; }
-      main .fluid-container .row .items-section .main-section .item .info .item-name {
-        margin: 0 auto;
-        font-size: 16px;
-        font-family: "Raleway"; }
-        main .fluid-container .row .items-section .main-section .item .info .item-name a {
-          display: block;
-          width: 100%;
-          height: 100%;
-          color: #424242 !important; }
-          main .fluid-container .row .items-section .main-section .item .info .item-name a:hover, main .fluid-container .row .items-section .main-section .item .info .item-name a:active, main .fluid-container .row .items-section .main-section .item .info .item-name a:visited {
-            text-decoration: none; }
-      main .fluid-container .row .items-section .main-section .item .info .price-container .price-old {
-        position: relative;
-        margin: 0 5px 0 0;
-        display: inline-block;
-        color: #E0E0E0;
-        text-decoration: line-through; }
-      main .fluid-container .row .items-section .main-section .item .info .price-container .price {
-        margin: 0 auto;
-        display: inline-block;
-        color: #9E9E9E;
-        font-size: 14px; }
+          display: inline-block;
+          margin: 0; }
+          main .fluid-container .row .items-section .main-section .item .image .thumbnail .badgie {
+            z-index: 2;
+            position: absolute;
+            color: white;
+            font-size: 20px;
+            font-family: "Raleway";
+            padding: 0 20px 0 20px;
+            background-color: #F48FB1; }
+          main .fluid-container .row .items-section .main-section .item .image .thumbnail .figure img {
+            position: relative;
+            max-height: 373px;
+            width: auto;
+            display: inline-block; }
+      main .fluid-container .row .items-section .main-section .item .info {
+        text-align: left;
+        max-width: 311px;
+        margin: 10px auto 0 auto; }
+        main .fluid-container .row .items-section .main-section .item .info .item-name {
+          margin: 0 auto;
+          font-size: 16px;
+          font-family: "Raleway"; }
+          main .fluid-container .row .items-section .main-section .item .info .item-name a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #424242 !important; }
+            main .fluid-container .row .items-section .main-section .item .info .item-name a:hover, main .fluid-container .row .items-section .main-section .item .info .item-name a:active, main .fluid-container .row .items-section .main-section .item .info .item-name a:visited {
+              text-decoration: none; }
+        main .fluid-container .row .items-section .main-section .item .info .price-container .price-old {
+          position: relative;
+          margin: 0 5px 0 0;
+          display: inline-block;
+          color: #E0E0E0;
+          text-decoration: line-through; }
+        main .fluid-container .row .items-section .main-section .item .info .price-container .price {
+          margin: 0 auto;
+          display: inline-block;
+          color: #9E9E9E;
+          font-size: 14px; }
 
 body .modal .modal-dialog .modal-content .modal-body .modal-left #current-item-image {
   width: 100%; }

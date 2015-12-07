@@ -14,6 +14,27 @@ figcaption {
 	color: #424242;
 }
 
+.actionPanel {
+	list-style-type: none;
+  display:block;
+	position: absolute;
+	top: 0;
+	right: 3%;
+	opacity: 0;
+	z-index: 5;
+	transform: translateY(100%);
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.actionPanel li{
+	font-size: 25px;
+	text-align: right;
+}
+
+.actionPanel li i{
+	margin-left:5px;
+}
+
 figcaption h3 {
 	margin: 0;
 	padding: 0;
@@ -22,6 +43,10 @@ figcaption h3 {
 
 figure img {
 	transition: transform 0.4s;
+}
+
+a.thumbnail{
+	position: absolute;
 }
 
 figure:hover img,
@@ -45,5 +70,12 @@ figure:hover figcaption,
 figure.cs-hover figcaption {
 	opacity: 1;
 	transform: translateY(0px);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+figure:hover .actionPanel,
+figure.cs-hover .actionPanel {
+	opacity: 1;
+	transform: translateY(20px);
 	transition: transform 0.4s, opacity 0.1s;
 }
