@@ -18,7 +18,7 @@ figcaption {
 	list-style-type: none;
   display:block;
 	position: absolute;
-	top: 0;
+	top: -20px;
 	right: 3%;
 	opacity: 0;
 	z-index: 5;
