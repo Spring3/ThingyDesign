@@ -4060,13 +4060,13 @@ html {
 
 header .label .row .logo {
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   border-radius: 50%; }
   header .label .row .logo .img-div {
     background-image: url("../img/logo.svg");
     background-size: cover;
-    background-position-y: +40%;
+    background-position: 0 40%;
     width: 100%;
     height: 100%;
     border-radius: 50%;

@@ -39,6 +39,7 @@ main{
                 position: relative;
                 display:inline-block;
                 margin : 0;
+                max-width: 100%;
                 .badgie{
                   z-index: 2;
                   position: absolute;
@@ -47,7 +48,6 @@ main{
                   font-family: $font-main;
                   padding: 0 20px 0 20px;
                   background-color: #F48FB1;
-
                 }
                 .figure{
                   img{
