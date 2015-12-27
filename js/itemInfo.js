@@ -21,9 +21,19 @@ $(document).ready(function(){
   });
 
 
-  $('#infoPanel').click(function(){
+  $('#productInfoPanel').click(function(){
     var span = $(this).children().first();
     var panel = $('#productInfo');
+    processCollapse(span, panel);
+  });
+
+  $('#refundInfoPanel').click(function(){
+    var span = $(this).children().first();
+    var panel = $('#refundInfo');
+    processCollapse(span, panel);
+  });
+
+  function processCollapse(span, panel){
     if (panel.hasClass("in")){
       span.css("top", "-8px");
       span.text("+");
@@ -32,6 +42,6 @@ $(document).ready(function(){
       span.css("top", "-11px");
       span.text("-");
     }
-  });
+  };
 
 });

@@ -4120,7 +4120,9 @@ main {
       border: none; }
     main .fluid-container .row .menu .top-menu-list .cart, main .fluid-container .row .menu .top-menu-list .favourites {
       line-height: 2.5;
-      display: inline-block; }
+      display: inline-block;
+      position: relative;
+      top: -1px; }
       main .fluid-container .row .menu .top-menu-list .cart a, main .fluid-container .row .menu .top-menu-list .favourites a {
         display: block; }
         main .fluid-container .row .menu .top-menu-list .cart a .bag, main .fluid-container .row .menu .top-menu-list .favourites a .bag {
@@ -4199,6 +4201,7 @@ footer .social {
       display: inline-block; }
       .main-info .left-part .image-list li .item-image {
         display: inline-block;
+        border: solid 2px white;
         height: 100%;
         width: 100%; }
         .main-info .left-part .image-list li .item-image img {
