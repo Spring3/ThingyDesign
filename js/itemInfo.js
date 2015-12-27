@@ -22,12 +22,15 @@ $(document).ready(function(){
 
 
   $('#infoPanel').click(function(){
-    panelCollapsed = !panelCollapsed;
-    if (panelCollapsed){
-      $(this).children().children().first().attr("class", "fa fa-plus");
+    var span = $(this).children().first();
+    var panel = $('#productInfo');
+    if (panel.hasClass("in")){
+      span.css("top", "-8px");
+      span.text("+");
     }
     else{
-      $(this).children().children().first().attr("class", "fa fa-minus");
+      span.css("top", "-11px");
+      span.text("-");
     }
   });
 

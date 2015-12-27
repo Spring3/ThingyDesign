@@ -35,6 +35,8 @@ main{
             .image{
               @extend .centered;
               position: relative;
+              margin: 0 auto;
+              max-width: 300px;
               .thumbnail{
                 position: relative;
                 display:inline-block;
@@ -63,13 +65,15 @@ main{
               text-align: left;
               max-width: 311px; //hard-code reason: image centering
               margin: 10px auto 0 auto;
+              position: relative;
+              left: 5px;
               .item-name{
                 margin: 0 auto;
                 font-size: $font-sm-size;
                 font-family: $font-main;
                 a{
                   display:block;
-                  width:100%;
+                  width:80%;
                   height: 100%;
                   color: $col-grey !important;
                   &:hover, &:active, &:visited{
@@ -93,6 +97,18 @@ main{
                   font-size: $font-xs-size;
                 } //price
               } //price-container
+              .btn-toCart{
+                position: absolute;
+                display: inline-block;
+                top: 0;
+                right: 10px;
+                button.btn-add{
+                  border: 1px solid #66BB6A;
+                  color: #66BB6A;
+                  border-radius: 0;
+                  padding: 5px 6px;
+                }
+              } //btn-toCart
             } //info
           } //item
         } //main-section

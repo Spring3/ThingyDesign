@@ -2223,7 +2223,7 @@
 
 /* SHADOW/GLOW TRANSITIONS */
 /* Glow */
-.hvr-glow {
+.hvr-glow, .hvr-glow-green {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -2236,7 +2236,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow; }
-  .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  .hvr-glow:hover, .hvr-glow-green:hover, .hvr-glow:focus, .hvr-glow-green:focus, .hvr-glow:active, .hvr-glow-green:active {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); }
 
 /* Shadow */
@@ -4127,7 +4127,7 @@ main {
           display: inline-block;
           background-image: url("../img/bag.svg");
           background-size: cover;
-          background-image-color: #6F9971;
+          background-image-color: #66BB6A;
           width: 40px;
           height: 40px;
           position: relative;
@@ -4154,7 +4154,6 @@ footer .social {
   footer .social li {
     display: inline-block;
     border-radius: 50%;
-    border: solid 2px #424242;
     text-align: center; }
     footer .social li a {
       color: #424242;
@@ -4166,7 +4165,7 @@ footer .social {
         top: 5px; }
 
 .hvr-ripple-out:before {
-  border: #424242 solid 1px;
+  border: #424242 solid 2px;
   border-radius: 50px; }
 
 .hvr-shutter-in-vertical {
@@ -4182,6 +4181,10 @@ footer .social {
 .hvr-icon-pulse-grow-heart:hover:before, .hvr-icon-pulse-grow-heart:focus:before, .hvr-icon-pulse-grow-heart:active:before {
   color: #C62828;
   content: "\f004"; }
+
+.hvr-glow-green:hover, .hvr-glow-green:focus, .hvr-glow-green:active {
+  box-shadow: 0 0 8px #66BB6A;
+  background: white; }
 
 main {
   font-family: "Raleway"; }
@@ -4200,7 +4203,9 @@ main {
     main .fluid-container .row .items-section .main-section .item {
       position: relative; }
       main .fluid-container .row .items-section .main-section .item .image {
-        position: relative; }
+        position: relative;
+        margin: 0 auto;
+        max-width: 300px; }
         main .fluid-container .row .items-section .main-section .item .image .thumbnail {
           position: relative;
           display: inline-block;
@@ -4222,14 +4227,16 @@ main {
       main .fluid-container .row .items-section .main-section .item .info {
         text-align: left;
         max-width: 311px;
-        margin: 10px auto 0 auto; }
+        margin: 10px auto 0 auto;
+        position: relative;
+        left: 5px; }
         main .fluid-container .row .items-section .main-section .item .info .item-name {
           margin: 0 auto;
           font-size: 16px;
           font-family: "Raleway"; }
           main .fluid-container .row .items-section .main-section .item .info .item-name a {
             display: block;
-            width: 100%;
+            width: 80%;
             height: 100%;
             color: #424242 !important; }
             main .fluid-container .row .items-section .main-section .item .info .item-name a:hover, main .fluid-container .row .items-section .main-section .item .info .item-name a:active, main .fluid-container .row .items-section .main-section .item .info .item-name a:visited {
@@ -4245,6 +4252,16 @@ main {
           display: inline-block;
           color: #9E9E9E;
           font-size: 14px; }
+        main .fluid-container .row .items-section .main-section .item .info .btn-toCart {
+          position: absolute;
+          display: inline-block;
+          top: 0;
+          right: 10px; }
+          main .fluid-container .row .items-section .main-section .item .info .btn-toCart button.btn-add {
+            border: 1px solid #66BB6A;
+            color: #66BB6A;
+            border-radius: 0;
+            padding: 5px 6px; }
 
 body .modal .modal-dialog .modal-content .modal-body .modal-left #current-item-image {
   width: 100%; }

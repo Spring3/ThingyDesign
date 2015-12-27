@@ -73,6 +73,9 @@
       font-family: $font-main;
     } //addToCart
     .panel{
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
       .panel-heading{
         .panel-title{
           a{
@@ -80,9 +83,66 @@
             &:hover, &:active, &:visited{
               text-decoration: none !important;
             }
+            span{
+              font-size: 35px;
+              font-weight: 100;
+              position: relative;
+              top: -8px;
+            }
           }
         }
       }
     }
+
+    .social{
+      .icons {
+        list-style-type: none;
+        display:inline-block;
+        margin: 0;
+        padding: 0;
+        .icon{
+          display:inline;
+          cursor: pointer;
+          font-size: $font-size;
+        }
+        .fb{
+          color: #3b5998;
+          &:hover{
+            @include hovered(#3b6998);
+          }
+        }
+        .gplus{
+          color: #dc4e41;
+          &:hover{
+            @include hovered(#dc4e41);
+          }
+        }
+        .vk{
+          color: #45668e;
+          &:hover{
+            @include hovered(#45668e);
+          }
+        }
+        .pin{
+          color: #bd081c;
+          &:hover{
+            @include hovered(#bd081c);
+          }
+        }
+        .insta{
+          color: #3f729b;
+          &:hover{
+            @include hovered(#3f729b);
+          }
+        }
+        .twit{
+          color: #55acee;
+          &:hover{
+            @include hovered(#55acee);
+          }
+        }
+      }
+
+    } //social
   } //right-part
 }

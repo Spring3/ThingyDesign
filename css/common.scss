@@ -3,7 +3,7 @@ $col-backg-main : white;  //main background color for html section
 $col-grey : #424242;
 $col-grey-light: #9E9E9E;
 $col-grey-light-2: #E0E0E0;
-$col-success: #6F9971;
+$col-success: #66BB6A;
 $col-pink: #F48FB1;
 $col-red : #C62828;
 $col-pink-hover: #F06292;
@@ -229,7 +229,6 @@ footer{
     li{
       display:inline-block;
       border-radius: 50%;
-      border: solid 2px $col-grey;
       text-align: center;
       a{
         color: $col-grey;
@@ -248,7 +247,7 @@ footer{
 //Hover .css classes overriding
 .hvr-ripple-out{
   &:before {
-    border: $col-grey solid 1px;
+    border: $col-grey solid 2px;
     border-radius: 50px;
   }
 }
@@ -279,4 +278,18 @@ footer{
     }
 
 	}
+}
+
+.hvr-glow-green{
+  @extend .hvr-glow;
+  &:hover,
+	&:focus,
+	&:active{
+    box-shadow: 0 0 8px $col-success;
+    background: white;
+  }
+}
+
+@mixin hovered($color) {
+    color: $color + #111111;
 }
