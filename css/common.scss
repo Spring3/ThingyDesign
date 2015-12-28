@@ -1,5 +1,6 @@
 @import 'hover';
 $col-backg-main : white;  //main background color for html section
+$col-charcoal: #2C2C2B;
 $col-grey : #424242;
 $col-grey-light: #9E9E9E;
 $col-grey-light-2: #E0E0E0;
@@ -25,6 +26,10 @@ $max-width: 90%;  //for items-section
 @font-face {
   font-family: "JSlim";
   src: url("../fonts/Slim Joe.otf");
+}
+
+html::-webkit-scrollbar {
+  display: inline-block;
 }
 
 .margined{
@@ -245,6 +250,64 @@ footer{
     }
   } //social
 } //footer
+
+//cart pushy
+
+.pushy{
+  background: $col-charcoal;
+  .wrapper{
+    //padding-right: 20px;
+    .header{
+      background: $col-charcoal;
+      padding: 30px 0px;
+      color: white;
+    }
+    .cart-insides{
+      list-style-type: none;
+      padding: 0;
+      background: $col-backg-main;
+      .cart-item{
+        position: relative;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        a{
+          display:inline-block;
+          img{
+            max-width: 100px;
+            max-height: 100px;
+          }
+        }
+        .cart-item-info{
+          position:absolute;
+          list-style-type: none;
+          display:inline-block;
+          top: 20%;
+          left: 40%;
+          .cart-item-name{
+            font-size:$font-size - 2;
+            color: $col-grey-light;
+          }
+
+        }
+      } //cart-item
+    } //cart-insides
+    .total{
+      color: white;
+    }
+    .opensCart{
+      display:block;
+      border-radius: 0px;
+      border: none;
+      width: 80%;
+      margin: 0 auto;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      background-color: $col-success;
+      color: white;
+      font-size: $font-size;
+      font-family: $font-main;
+    }
+  } //wrapper
+}
 
 //Hover .css classes overriding
 .hvr-ripple-out{

@@ -12,6 +12,10 @@ main{
                 width:60%;
                 display:inline;
               }
+              button{
+                position:relative;
+                top: -2px;
+              }
             } //form-group
           } //form
         } //searchBar

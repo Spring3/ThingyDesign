@@ -41,11 +41,11 @@ $(document).ready(function(){
     } else {
         input.val(0);
     }
-});
-$('.input-number').focusin(function(){
-   $(this).data('oldValue', $(this).val());
-});
-$('.input-number').change(function() {
+  });
+  $('.input-number').focusin(function(){
+    $(this).data('oldValue', $(this).val());
+  });
+  $('.input-number').change(function() {
 
     minValue =  parseInt($(this).attr('min'));
     maxValue =  parseInt($(this).attr('max'));
@@ -66,8 +66,8 @@ $('.input-number').change(function() {
     }
 
 
-});
-$(".input-number").keydown(function (e) {
+  });
+  $(".input-number").keydown(function (e) {
         // Allow: backspace, delete, tab, escape, enter and .
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
              // Allow: Ctrl+A
@@ -82,4 +82,8 @@ $(".input-number").keydown(function (e) {
             e.preventDefault();
         }
     });
+
+    $('.menu-btn').click(function(){
+      $('.pushy').css('visibility', 'visible');
+    })
 });

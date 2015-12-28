@@ -8,7 +8,6 @@
   </head>
 
   <header>
-
     <div class="label container">
       <div class="row">
         <div class="col-xs-12 col-sm-4 col-xs-offset-0 col-sm-offset-4">
@@ -24,6 +23,66 @@
 
   </header>
 
+  <nav class="pushy pushy-left">
+    <div class="wrapper">
+      <h2 class="header centered">Cart</h2>
+      <ul class="cart-insides">
+        <li class="cart-item">
+          <a href="#"><img class="img-responsive" src="../img/1.jpg" alt="image"/></a>
+          <ul class="cart-item-info">
+            <li class="cart-item-name">Item name</li>
+            <li class="quantity"><span>x </span>3</li>
+            <li class="cart-item-price"><span>$</span>19.99</li>
+          </ul>
+        </li>
+        <li class="cart-item">
+          <a href="#"><img class="img-responsive" src="../img/2.jpg" alt="image"/></a>
+          <ul class="cart-item-info">
+            <li class="cart-item-name">Item name1</li>
+            <li class="quantity"><span>x </span>4</li>
+            <li class="cart-item-price"><span>$</span>19.99</li>
+          </ul>
+        </li>
+        <li class="cart-item">
+          <a href="#"><img class="img-responsive" src="../img/3.jpg" alt="image"/></a>
+          <ul class="cart-item-info">
+            <li class="cart-item-name">Item name2</li>
+            <li class="quantity"><span>x </span>20</li>
+            <li class="cart-item-price"><span>$</span>19.99</li>
+          </ul>
+        </li>
+        <li class="cart-item">
+          <a href="#"><img class="img-responsive" src="../img/4.jpg" alt="image"/></a>
+          <ul class="cart-item-info">
+            <li class="cart-item-name">Item name3</li>
+            <li class="quantity"><span>x </span>2</li>
+            <li class="cart-item-price"><span>$</span>19.99</li>
+          </ul>
+        </li>
+        <li class="cart-item">
+          <a href="#"><img class="img-responsive" src="../img/stub-1.jpg" alt="image"/></a>
+          <ul class="cart-item-info">
+            <li class="cart-item-name">Item name4</li>
+            <li class="quantity"><span>x </span>5</li>
+            <li class="cart-item-price"><span>$</span>19.99</li>
+          </ul>
+        </li>
+        <li class="cart-item">
+          <a href="#"><img class="img-responsive" src="../img/stub-2.jpg" alt="image"/></a>
+          <ul class="cart-item-info">
+            <li class="cart-item-name">Item name5</li>
+            <li class="quantity"><span>x </span>1</li>
+            <li class="cart-item-price"><span>$</span>19.99</li>
+          </ul>
+        </li>
+      </ul>
+      <h2 class="total centered">Subtotal: <span class="cart-total"><span>$</span>100</span></h2>
+      <button type="button" class="btn btn-default opensCart">View cart</button>
+    </div>
+  </nav>
+
+  <div class="site-overlay"></div>
+
   <main class="margined-2">
     <div class="fluid-container">
       <div class="row">
@@ -34,7 +93,7 @@
             </li>
             <li class="menu-item cart col-xs-3 col-sm-3 centered hvr-underline-reveal-green">
               <a href="#/">
-                <span>Cart: </span><div class="bag"><p>10</p></div>
+                <div class="bag"><p>10</p></div>
               </a>
             </li>
           </ul>
@@ -82,7 +141,7 @@
                   </span>
               </div> <!-- Quantity selector -->
               <div class="clear"></div>
-              <button id="addToCart" type="button" class="btn btn-default margined-3">Add to cart</button>
+              <button id="addToCart" type="button" class="btn btn-default margined-3 menu-btn">Add to cart</button>
               <hr>
               <div class="panel panel-default">
 
@@ -184,10 +243,12 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/font-awesome.css"/>
     <link rel="stylesheet" href="../css/itemInfo.css"/>
+    <link rel="stylesheet" href="../css/pushy.css"/>
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/itemInfo.js"></script>
+    <script src="../js/pushy.min.js"></script>
 
   </body>
 
