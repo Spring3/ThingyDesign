@@ -124,9 +124,9 @@ $(document).ready(function(){
         var arrow = $('#cartPushBtn');
 
         if (pushy.hasClass('pushy-open')){
-          html.css("overflow", "hidden")
+          html.css("overflow", "hidden").css('margin-right', '17px');
         } else{
-          html.css("overflow", "auto");
+          html.css("overflow", "auto").css('margin-right', '0px');
           arrow.removeClass("rotate");
         }
       }else{
