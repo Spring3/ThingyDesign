@@ -1,1 +1,1 @@
-sass --watch index.scss:index.css common.scss:common.css itemInfo.scss:itemInfo.css
+sass --watch index.scss:index.css itemInfo.scss:itemInfo.css

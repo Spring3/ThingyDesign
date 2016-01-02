@@ -155,8 +155,17 @@ body{
             }
           } //modal-left
           .modal-right{
-            h4{
+            #itemName{
               font-size: $font-size;
+              font-family: $font-main;
+              background: $col-grey-back;
+              border-top: solid 1px $col-grey-border;
+              border-bottom: solid 1px $col-grey-border;
+              padding: 15px;
+              margin:0;
+            }
+            h4{
+              font-size:$font-size;
               font-family: $font-main;
             }
             #item-price{
@@ -213,9 +222,8 @@ body{
             border-width: 2px;
             font-family: $font-main;
             font-size: $font-sm-size;
-            &:hover{
-              background-color: $col-pink !important;
-            }
+            background-color: $col-pink !important;
+            color: white;
           } //closeBtn
         } //modal-footer
       } //modal-content

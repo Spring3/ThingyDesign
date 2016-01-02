@@ -4007,9 +4007,6 @@
 .modal {
   border-radius: 0; }
 
-@font-face {
-  font-family: "JSlim";
-  src: url("../fonts/Slim Joe.otf"); }
 html::-webkit-scrollbar {
   display: inline-block; }
 
@@ -4063,8 +4060,8 @@ html {
 
 header .label .row .logo {
   display: inline-block;
-  height: 180px;
-  width: 180px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%; }
   header .label .row .logo .img-div {
     background-image: url("../img/logo.svg");
@@ -4075,11 +4072,11 @@ header .label .row .logo {
     border-radius: 50%;
     border: solid 3px #424242;
     margin: 0 auto; }
-header .label .row h4 {
-  font-family: "JSlim";
-  font-size: 30px;
+header .label .row .brand {
+  font-family: "Raleway";
+  font-size: 20px;
   color: #424242;
-  font-weight: 800;
+  font-weight: 400;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
@@ -4090,9 +4087,9 @@ header .label .row .hline {
   background-color: #424242; }
 header .label .row .caption {
   color: #424242;
-  font-family: "JSlim";
-  font-size: 17px;
-  font-weight: 1900;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 400;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
@@ -4397,6 +4394,9 @@ footer .social {
   box-shadow: 0 0 8px #66BB6A;
   background: white; }
 
+@media screen and (max-width: 767px) {
+  #current-item-image {
+    margin: 0 auto; } }
 main {
   font-family: "Raleway"; }
   main .fluid-container .row .search .searchBar form .form-group .input-search {
@@ -4495,6 +4495,14 @@ body .modal .modal-dialog .modal-content .modal-body .modal-left .image-list {
         height: 50px; }
     body .modal .modal-dialog .modal-content .modal-body .modal-left .image-list li .image-selected {
       border: solid 2px #424242; }
+body .modal .modal-dialog .modal-content .modal-body .modal-right #itemName {
+  font-size: 20px;
+  font-family: "Raleway";
+  background: #f5f5f5;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  padding: 15px;
+  margin: 0; }
 body .modal .modal-dialog .modal-content .modal-body .modal-right h4 {
   font-size: 20px;
   font-family: "Raleway"; }
@@ -4537,8 +4545,8 @@ body .modal .modal-dialog .modal-content .modal-footer .closeBtn {
   border-color: #F48FB1;
   border-width: 2px;
   font-family: "Raleway";
-  font-size: 16px; }
-  body .modal .modal-dialog .modal-content .modal-footer .closeBtn:hover {
-    background-color: #F48FB1 !important; }
+  font-size: 16px;
+  background-color: #F48FB1 !important;
+  color: white; }
 
 /*# sourceMappingURL=index.css.map */

@@ -5,6 +5,9 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
   <head>
     <title>Thingy Shop</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/itemInfo.css"/>
   </head>
 
   <header>
@@ -14,7 +17,7 @@
           <a class="logo" href="../index.html">
             <div class="img-div"></div>
           </a>
-          <h4>Thingy Shop</h4>
+          <h4 class="brand">Thingy Shop</h4>
           <div class="hline"></div>
           <p class="caption margined">Cool stuff for everyone</p>
         </div>
@@ -114,20 +117,23 @@
 
       <div class="row main-info ">
             <div class="col-sm-8 col-md-6 col-lg-6 col-lg-offset-1 left-part">
+              <h4 id="itemName" class="visible-xs centered" style="font-weight: bold">Item name</h4>
+              <div class="margined-2 visible-xs"></div>
               <img id="current-item-image" class="img-responsive" src="../img/1.jpg"/>
               <ul class="image-list margined-2">
                 <li><a class="item-image image-selected" href="#/"><img src="../img/1.jpg"></a></li>
                 <li><a class="item-image" href="#/"><img src="../img/2.jpg"></a></li>
                 <li><a class="item-image" href="#/"><img src="../img/3.jpg"></a></li>
               </ul>
+              <hr>
               <div class="description margined-2">
                 <p>I'm a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.</p>
               </div>
             </div>
             <div class="right-part col-sm-4 col-md-6 col-lg-5">
-              <h4>Item name</h4>
+              <h4 id="itemName" class="hidden-xs">Item name</h4>
               <p class="margined-2" id="item-price">$19.99 </p>
-              <p class="quantity margined-3">Quantity:</p>
+              <p class="quantity margined-2">Quantity:</p>
               <div class="input-group">
                   <span class="input-group-btn left-span">
                       <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
@@ -241,9 +247,7 @@
 
   <body>
 
-    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/font-awesome.css"/>
-    <link rel="stylesheet" href="../css/itemInfo.css"/>
+
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/common.js"></script>

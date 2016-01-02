@@ -5,6 +5,10 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
   <head>
     <title>Thingy Shop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/zoe.css"/>
   </head>
 
   <header>
@@ -15,7 +19,7 @@
           <a class="logo" href="index.html">
             <div class="img-div"></div>
           </a>
-          <h4>Thingy Shop</h4>
+          <h4 class="brand">Thingy Shop</h4>
           <div class="hline"></div>
           <p class="caption margined">Cool stuff for everyone</p>
         </div>
@@ -308,7 +312,7 @@
 
   <body>
 
-    <div class="modal fade" id="testModal" role="dialog">
+    <div class="modal fade hidden-xs" id="testModal" role="dialog">
 
       <div class="modal-dialog modal-lg">
 
@@ -327,10 +331,10 @@
               </ul>
             </div>
             <div class="modal-right col-sm-4 col-md-6 col-lg-5">
-              <h4>Item name</h4>
+              <h4 id="itemName">Item name</h4>
               <p class="margined-2" id="item-price">$19.99 </p>
               <span><a class="details" href="html/itemInfo.html">View Full Details</a></span>
-              <p class="quantity margined-3">Quantity:</p>
+              <p class="quantity margined-2">Quantity:</p>
               <div class="input-group">
                   <span class="input-group-btn left-span">
                       <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
@@ -345,7 +349,7 @@
                   </span>
               </div> <!-- Quantity selector -->
               <div class="clear"></div>
-              <button id="addToCart" type="button" class="btn btn-default margined-3"><i class="fa fa-shopping-cart fa-2x"></i></button>
+              <button id="addToCart" type="button" class="btn btn-default margined-3">Add to cart</button>
             </div>
           </div>
           <div class="clear"></div>
@@ -358,10 +362,7 @@
 
     </div>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/font-awesome.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
-    <link rel="stylesheet" href="css/zoe.css"/>
+
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/pushy.min.js"></script>

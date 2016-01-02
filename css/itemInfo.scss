@@ -1,11 +1,22 @@
 @import "common";
 
 .main-info{
+
+  #itemName{
+    font-size: $font-size;
+    font-family: $font-main;
+    background: $col-grey-back;
+    border-top: solid 1px $col-grey-border;
+    border-bottom: solid 1px $col-grey-border;
+    padding: 15px;
+    margin:0;
+  }
+  
   font-family: $font-main;
   .left-part{
     #current-item-image{
-      max-width: 100%;
-      height: auto;
+      max-width: 80%;
+      height: 400px;
     }
 
     .image-list{
@@ -32,8 +43,9 @@
   } //left-part
 
   .right-part{
+
     h4{
-      font-size: $font-size;
+      font-size:$font-size;
       font-family: $font-main;
     }
     #item-price{

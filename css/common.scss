@@ -4,13 +4,13 @@ $col-charcoal: #2C2C2B;
 $col-grey : #424242;
 $col-grey-light: #9E9E9E;
 $col-grey-light-2: #E0E0E0;
+$col-grey-back: #f5f5f5;
+$col-grey-border: #ddd;
 $col-success: #66BB6A;
 $col-pink: #F48FB1;
 $col-red : #C62828;
 $col-pink-hover: #F06292;
 $font-main : "Raleway";
-$font-head : "JSlim";
-$font-dilem : "Dilem";
 $font-bg-size : 30px;
 $font-size : 20px;
 $font-sm-size : 16px;
@@ -22,11 +22,6 @@ $push-width: 350px;
 
 .modal {
   border-radius: 0;
-}
-//fonts
-@font-face {
-  font-family: "JSlim";
-  src: url("../fonts/Slim Joe.otf");
 }
 
 html::-webkit-scrollbar {
@@ -102,8 +97,8 @@ header{
     .row{
       .logo{
         display:inline-block;
-        height:180px;
-        width: 180px;
+        height:150px;
+        width: 150px;
         border-radius: 50%;
         .img-div{
           background-image: url("../img/logo.svg");
@@ -116,11 +111,11 @@ header{
           margin: 0 auto;
         }
       } //logo
-      h4{
-        font-family: $font-head;
-        font-size: $font-bg-size;
+      .brand{
+        font-family: $font-main;
+        font-size: $font-size;
         color: $col-grey;
-        font-weight: 800;
+        font-weight: 400;
         text-rendering: optimizeLegibility;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
@@ -134,9 +129,9 @@ header{
       } //hline
       .caption{
         color: $col-grey;
-        font-family: $font-head;
-        font-size: 17px;
-        font-weight: 1900;
+        font-family: $font-main;
+        font-size: 18px;
+        font-weight: 400;
         text-rendering: optimizeLegibility;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
@@ -587,4 +582,10 @@ footer{
 
 @mixin hovered($color) {
     color: $color + #111111;
+}
+
+@media screen and (max-width: 767px){
+  #current-item-image{
+    margin: 0 auto;
+  }
 }
