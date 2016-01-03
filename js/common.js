@@ -121,9 +121,10 @@ $(document).ready(function(){
       if (isPushAllowed){
         var html = $("html");
         var pushy = $('.pushy');
+        var modal = $('.modal'); //for modal window on index
         var arrow = $('#cartPushBtn');
 
-        if (pushy.hasClass('pushy-open')){
+        if (pushy.hasClass('pushy-open') || modal.hasClass('in')){
           html.css("overflow", "hidden").css('padding-right', '17px');
         } else{
           html.css("overflow", "auto").css('padding-right', '0px');

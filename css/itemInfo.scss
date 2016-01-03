@@ -11,12 +11,11 @@
     padding: 15px;
     margin:0;
   }
-  
+
   font-family: $font-main;
   .left-part{
     #current-item-image{
-      max-width: 80%;
-      height: 400px;
+      max-height: 400px;
     }
 
     .image-list{

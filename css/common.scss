@@ -24,16 +24,12 @@ $push-width: 350px;
   border-radius: 0;
 }
 
-html::-webkit-scrollbar {
-  display: inline-block;
-}
-
 .margined{
   margin-top: 10px;
 }
 
 .margined-b{
-  margin-bottom: 5px;
+  margin: 0px 5px;
 }
 
 .like{
@@ -148,31 +144,35 @@ main{
       .menu{
         display:block;
         padding: 0;
-
-        .menu-list{
-          list-style-type: none;
-          margin: 0 auto;
-          padding: 0;
-          .menu-item{
-            display: inline;
-            line-height: 2;
-            font-family: $font-main;
-            font-size: $font-sm-size;
-            font-weight: 400;
-            border-top: solid 1px $col-grey;
-            border-bottom: solid 1px $col-grey;
-            a{
-              display:block;
-              text-decoration: none;
-              &:hover, &:active, &:visited{
+        a{
+          color: $col-grey;
+        }
+          .menu-list{
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 0;
+            .menu-item{
+              display: inline;
+              line-height: 2;
+              font-family: $font-main;
+              font-size: $font-sm-size;
+              font-weight: 400;
+              border-top: solid 1px $col-grey;
+              border-bottom: solid 1px $col-grey;
+              a{
+                display:block;
                 text-decoration: none;
+                &:hover, &:active, &:visited{
+                  text-decoration: none;
+                }
               }
-            }
-          } //menu-item
-        } //menu-list
+            } //menu-item
+          } //menu-list
+      }
+
+      .menu.visible-xs{
         .top-menu-list{
           @extend .menu-list;
-
           .menu-item{
             border: none;
           }
@@ -182,38 +182,65 @@ main{
             position: relative;
             top: -1px;
 
-            a{
-              display:block;
-              .bag{
-                display:inline-block;
-                background-image: url("../img/bag.svg");
-                background-size: cover;
-                background-image-color: $col-success;
-                width: 40px;
-                height: 40px;
-                position:relative;
-                top: -10px;
-                line-height: 2;
-                color:white;
-                font-size: $font-sm-size - 2;
-                p{
-                  position:relative;
-                  top: 10px;
-                } //p
-              } //bag
-            } //a
+            .cartBtn{
+              border-color: $col-success;
+              padding: 8px 13px;
+              font-size: $font-size;
+              color: $col-success;
+            }
           } //cart
           .favourites{
-            @extend .cart;
-            line-height: 2.9;
-            a{
-              text-align:center;
-              padding: 0;
-              top : 0px;
+            .favBtn{
+              border-color: $col-pink;
+              padding: 8px 13px;
+              font-size: $font-size;
             }
           }
-        } //top-menu-list
+        }//menu-default
+      }
+
+      //With floating like, cart buttons
+      .menu.hidden-xs{
+          .top-menu-list{
+            @extend .menu-list;
+            position: fixed;
+            right: 0;
+            top: 20%;
+            .menu-item{
+              border: none;
+              position:relative;
+              float:right;
+              clear:both;
+              button{
+                width:50px;
+                height:50px;
+                margin-top:5px;
+              }
+            }
+            .cartBtn{
+              border-color: $col-success;
+              padding: 8px 13px;
+              font-size: $font-size;
+              color: $col-success;
+            }
+            .favBtn{
+              border-color: $col-pink;
+              padding: 8px 13px;
+              font-size: $font-size;
+            }
+          } //menu-fixed
       } //menu
+    } //row
+  } //flui-container
+} //main
+
+//Hack for microsoft browsers
+@supports (-ms-accelerator:true) {
+  main{
+    .menu.hidden-xs{
+      .top-menu-list{
+        right:15px !important;
+      }
     }
   }
 }
@@ -479,7 +506,7 @@ footer{
   }
 }
 
-@media screen and (max-width: 414px) and (orientation:portrait) {
+@media screen and (max-width: 470px) and (orientation:portrait) {
     .pushy{
         width: 350px;
         .wrapper{
@@ -552,11 +579,12 @@ footer{
 .hvr-icon-pulse-grow-heart{
   @extend .hvr-icon-pulse-grow;
   @extend .hvr-icon-fade;
+  padding-right:12px;
   &:before{
     content: "\f08a";
     color: $col-red;
     position:relative;
-    right:-5px;
+    right: 0;
   }
 
   &:hover,
@@ -570,13 +598,33 @@ footer{
 	}
 }
 
-.hvr-glow-green{
-  @extend .hvr-glow;
+.hvr-icon-pulse-grow-cart{
+  @extend .hvr-icon-pulse-grow;
+  @extend .hvr-icon-fade;
+  font-size: $font-size + 6;
+  &:before{
+    content: "\f07a";
+    color: $col-success;
+    position:initial;
+    padding: 0;
+  }
+
   &:hover,
 	&:focus,
-	&:active{
-    box-shadow: 0 0 8px $col-success;
-    background: white;
+	&:active {
+    &:before{
+      	color: $col-success;
+        content: "\f07a";
+    }
+
+	}
+}
+
+.hvr-cart-pop{
+  @extend .hvr-icon-pop;
+  &:before{
+    content: "\f07a";
+    position: initial;
   }
 }
 

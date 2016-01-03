@@ -3,6 +3,11 @@
 
 $(document).ready(function(){
 
+  var imageList = $('.image-list');
+  if (imageList.children().length == 1){
+    imageList.css("display", "none");
+  }
+
   var panelCollapsed = false;
 
   //item preview image click

@@ -82,7 +82,7 @@
           </ul>
         </li>
       </ul>
-      <h2 class="total centered">Subtotal: <span class="cart-total"><span>$</span>100</span></h2>
+      <h3 class="total centered">Subtotal: <span class="cart-total"><span>$</span>100</span></h3>
       <button type="button" class="btn btn-default opensCart">View cart</button>
     </div>
   </nav>
@@ -92,15 +92,13 @@
   <main class="margined-2">
     <div class="fluid-container">
       <div class="row">
-        <div class="menu col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+        <div class="menu col-xs-12 col-sm-12 col-md-10 col-md-offset-1 visible-xs">
           <ul class="top-menu-list row">
             <li class="menu-item favourites col-xs-7 col-sm-3 col-sm-offset-5 col-lg-2 col-lg-offset-6 centered">
-              <a href="#/"><span>Favourites:</span> <span class="hvr-icon-pulse-grow-heart"></span></a>
+              <button type="submit" class="btn btn-default favBtn hvr-icon-pulse-grow-heart"></button>
             </li>
             <li class="menu-item cart col-xs-5 col-sm-3 centered">
-              <a href="#/">
-                <div class="bag"><p>10</p></div>
-              </a>
+              <button type="submit" class="btn btn-default cartBtn"><i class="fa fa-shopping-cart"></i></button>
             </li>
           </ul>
           <div class="margined-3"></div>
@@ -111,6 +109,23 @@
             <li class="menu-item col-xs-3 centered hvr-underline-reveal"><a href="#/">Blog</a></li>
           </ul>
         </div>
+        <div class="menu col-xs-12 col-sm-12 col-md-10 col-md-offset-1 hidden-xs">
+          <ul class="top-menu-list row">
+            <li class="menu-item favourites centered">
+              <button type="submit" class="btn btn-default favBtn hvr-icon-pulse-grow-heart"></button>
+            </li>
+            <li class="menu-item cart centered">
+              <button type="submit" class="btn btn-default cartBtn hvr-cart-pop"></button>
+            </li>
+          </ul>
+          <div class="margined-3"></div>
+          <ul class="menu-list row">
+            <li class="menu-item col-xs-3 col-sm-offset-1 centered hvr-underline-reveal"><a href="#/">Things</a></li>
+            <li class="menu-item col-xs-3 col-sm-2 centered hvr-underline-reveal"><a href="#/">Contacts</a></li>
+            <li class="menu-item col-xs-3 col-sm-2 centered hvr-underline-reveal"><a href="#/">About</a></li>
+            <li class="menu-item col-xs-3 centered hvr-underline-reveal"><a href="#/">Blog</a></li>
+          </ul>
+        </div> <!-- menu with fixed buttons -->
       </div>
     </div>
 
@@ -155,7 +170,7 @@
                   <p class="badgie"></p>
                   <figure class="figure">
                     <ul class="actionPanel">
-                      <li><i class="like fa fa-heart-o"></i></li>
+                      <li><i class="like fa fa-heart-o hvr-pop"></i></li>
                     </ul>
                     <img class="img-responsive" src="img/1.jpg" alt="item"/>
                     <figcaption>
@@ -171,7 +186,7 @@
                   <p class="price">$19.99</p>
                 </div>
                 <div class="btn-toCart">
-                  <button id="addToCart1" type="button" class="btn btn-add btn-default hvr-glow-green menu-btn"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                  <button id="addToCart1" type="button" class="btn btn-add btn-default hvr-icon-pulse-grow-cart menu-btn"></button>
                 </div>
               </div>
             </div>
@@ -182,7 +197,7 @@
                   <p class="badgie">Sale</p>
                   <figure class="figure">
                     <ul class="actionPanel">
-                      <li><i class="like fa fa-heart-o"></i></li>
+                      <li><i class="like fa fa-heart-o hvr-pop"></i></li>
                     </ul>
                     <img class="img-responsive" src="img/2.jpg" alt="item"/>
                     <figcaption>
@@ -198,7 +213,7 @@
                   <p class="price">$10.99</p>
                 </div>
                 <div class="btn-toCart">
-                  <button id="addToCart2" type="button" class="btn btn-add btn-default hvr-glow-green menu-btn"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                  <button id="addToCart2" type="button" class="btn btn-add btn-default hvr-icon-pulse-grow-cart menu-btn"></button>
                 </div>
               </div>
             </div>
@@ -209,7 +224,7 @@
                   <p class="badgie">New</p>
                   <figure class="figure">
                     <ul class="actionPanel">
-                      <li><i class="like fa fa-heart-o"></i></li>
+                      <li><i class="like fa fa-heart-o hvr-pop"></i></li>
                     </ul>
                     <img class="img-responsive" src="img/3.jpg" alt="item"/>
                     <figcaption>
@@ -225,7 +240,7 @@
                   <p class="price">$19.99</p>
                 </div>
                 <div class="btn-toCart">
-                  <button id="addToCart3" type="button" class="btn btn-add btn-default hvr-glow-green menu-btn"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                  <button id="addToCart3" type="button" class="btn btn-add btn-default hvr-icon-pulse-grow-cart menu-btn"></button>
                 </div>
               </div>
             </div>
@@ -236,7 +251,7 @@
                   <p class="badgie"></p>
                   <figure class="figure">
                     <ul class="actionPanel">
-                      <li><i class="like fa fa-heart-o"></i></li>
+                      <li><i class="like fa fa-heart-o hvr-pop"></i></li>
                     </ul>
                     <img class="img-responsive" src="img/4.jpg" alt="item"/>
                     <figcaption>
@@ -252,7 +267,7 @@
                   <p class="price">$19.99</p>
                 </div>
                 <div class="btn-toCart">
-                  <button id="addToCart4" type="button" class="btn btn-add btn-default hvr-glow-green menu-btn"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                  <button id="addToCart4" type="button" class="btn btn-add btn-default hvr-icon-pulse-grow-cart menu-btn"></button>
                 </div>
               </div>
             </div>
@@ -299,9 +314,9 @@
             <p>Many thanks to Noun Project for a bag icon, created by Zlatko Najdenovski</p>
           </div>
           <ul class="social col-xs-6 col-sm-4 col-md-4 col-lg-3">
-            <li class="margined-b"><a class="hvr-ripple-out" href="#/"><i class="fa fa-vk fa-2x fa-fw-2x"></i></a></li>
-            <li class="margined-b"><a class="hvr-ripple-out" href="#/"><i class="fa fa-facebook fa-2x fa-fw-2x"></i></a></li>
-            <li class="margined-b"><a class="hvr-ripple-out" href="#/"><i class="fa fa-instagram fa-2x fa-fw-2x"></i></a></li>
+            <li class="margined-b"><a class="hvr-ripple-out" href="#/"><i class="fa fa-vk fa-2x fa-fw"></i></a></li>
+            <li class="margined-b"><a class="hvr-ripple-out" href="#/"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+            <li class="margined-b"><a class="hvr-ripple-out" href="#/"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
           </ul>
         </div>
       </div>
@@ -349,12 +364,12 @@
                   </span>
               </div> <!-- Quantity selector -->
               <div class="clear"></div>
-              <button id="addToCart" type="button" class="btn btn-default margined-3">Add to cart</button>
+              <button id="addToCart" type="button" class="btn btn-default menu-btn margined-3">Add to cart</button>
             </div>
           </div>
           <div class="clear"></div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
+
           </div>
         </div>
 
