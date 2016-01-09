@@ -1,30 +1,27 @@
 var isPushAllowed = false;
+var minScreenHeightForPushy = 600;
 
 $(window).resize(function(){
-  if($(window).height()<600){
+  checkWindowHeight();
+});
+
+var checkWindowHeight = function(){
+  if($(document).height() < minScreenHeightForPushy){
     $('.pushy').css('display', 'none');
     $('.site-overlay').css('display', 'none');
     isPushAllowed = false;
+    alert($(document).height());
   }
   else{
     $('.pushy').css('display', 'block');
     $('.site-overlay').css('display', 'block');
     isPushAllowed = true;
   }
-});
+};
 
 $(document).ready(function(){
 
-  if($(window).height()<600){
-    $('.pushy').css('display', 'none');
-    $('.site-overlay').css('display', 'none');
-    isPushAllowed = false;
-  }
-  else{
-    $('.pushy').css('display', 'block');
-    $('.site-overlay').css('display', 'block');
-    isPushAllowed = true;
-  }
+  checkWindowHeight();
 
   $('.like').click(function(event){
     event.preventDefault();

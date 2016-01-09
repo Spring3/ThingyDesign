@@ -26,7 +26,7 @@
         display:inline-block;
         .item-image{
           display:inline-block;
-          border: solid 2px white;
+          border: solid 1px white;
           height: 100%;
           width: 100%;
           img{
@@ -35,7 +35,7 @@
           }
         }
         .image-selected{
-          border: solid 2px $col-grey;
+          border: solid 1px $col-grey;
         }
       }
     }
@@ -48,9 +48,10 @@
       font-family: $font-main;
     }
     #item-price{
-      font-size: $font-size;
       font-family: $font-main;
       display:inline-block;
+      font-size: 25px;
+      font-weight: bold;
     }
     .quantity{
       font-size: $font-tiny-size;
@@ -157,4 +158,34 @@
 
     } //social
   } //right-part
+}
+
+@media screen and (max-width:767px){
+  .image-list{
+    display:block !important;
+    text-align: center;
+  }
+  #addToCart{
+    max-width: 423px;
+    margin: 30px auto 0 auto;
+  }
+  .description{
+    text-align: center;
+  }
+  #item-price{
+    display: block !important;
+    text-align:center;
+  }
+  .quantity-selector{
+    text-align:center;
+  }
+
+  .right-span{
+    float:left !important;
+  }
+
+  .input-group{
+    position:relative !important;
+    left:30px;
+  }
 }

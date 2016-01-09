@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/font-awesome.css"/>
     <link rel="stylesheet" href="../css/itemInfo.css"/>
+    <link rel="srylesheet" href="../css/hint.min.css"/>
   </head>
 
   <header>
@@ -90,13 +91,13 @@
   <main class="margined-2">
     <div class="fluid-container">
       <div class="row">
-        <div class="menu col-xs-12 col-sm-12 col-md-10 col-md-offset-1 visible-xs">
+        <div class="menu col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
           <ul class="top-menu-list row">
             <li class="menu-item favourites col-xs-7 col-sm-3 col-sm-offset-5 col-lg-2 col-lg-offset-6 centered">
               <button type="submit" class="btn btn-default favBtn hvr-icon-pulse-grow-heart"></button>
             </li>
             <li class="menu-item cart col-xs-5 col-sm-3 centered">
-              <button type="submit" class="btn btn-default cartBtn"><i class="fa fa-shopping-cart"></i></button>
+              <button type="submit" class="btn btn-default cartBtn hvr-icon-pulse-grow-cart"></button>
             </li>
           </ul>
           <div class="margined-3"></div>
@@ -107,23 +108,6 @@
             <li class="menu-item col-xs-3 centered hvr-underline-reveal"><a href="#/">Blog</a></li>
           </ul>
         </div>
-        <div class="menu col-xs-12 col-sm-12 col-md-10 col-md-offset-1 hidden-xs">
-          <ul class="top-menu-list row">
-            <li class="menu-item favourites centered">
-              <button type="submit" class="btn btn-default favBtn hvr-icon-pulse-grow-heart"></button>
-            </li>
-            <li class="menu-item cart centered">
-              <button type="submit" class="btn btn-default cartBtn hvr-cart-pop"></button>
-            </li>
-          </ul>
-          <div class="margined-3"></div>
-          <ul class="menu-list row">
-            <li class="menu-item col-xs-3 col-sm-offset-1 centered hvr-underline-reveal"><a href="../index.html">Things</a></li>
-            <li class="menu-item col-xs-3 col-sm-2 centered hvr-underline-reveal"><a href="#/">Contacts</a></li>
-            <li class="menu-item col-xs-3 col-sm-2 centered hvr-underline-reveal"><a href="#/">About</a></li>
-            <li class="menu-item col-xs-3 centered hvr-underline-reveal"><a href="#/">Blog</a></li>
-          </ul>
-        </div> <!-- menu with fixed buttons -->
       </div>
     </div>
   </main>
@@ -132,7 +116,7 @@
     <div class="container margined-xxl">
 
       <div class="row main-info ">
-            <div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 left-part">
+            <aside class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 left-part">
               <h4 id="itemName" class="visible-xs centered" style="font-weight: bold">Item name</h4>
               <div class="margined-2 visible-xs"></div>
               <img id="current-item-image" class="img-responsive" src="../img/1.jpg"/>
@@ -145,24 +129,26 @@
               <div class="description margined-2">
                 <p>I'm a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.</p>
               </div>
-            </div>
+            </aside>
             <div class="right-part col-sm-6 col-md-6 col-lg-5">
               <h4 id="itemName" class="hidden-xs">Item name</h4>
               <p class="margined-2" id="item-price">$19.99 </p>
-              <p class="quantity margined-2">Quantity:</p>
-              <div class="input-group">
-                  <span class="input-group-btn left-span">
-                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
-                          <span class="glyphicon glyphicon-minus"></span>
-                      </button>
-                  </span>
-                  <input id="quantity-input" type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
-                  <span class="input-group-btn right-span">
-                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                          <span class="glyphicon glyphicon-plus"></span>
-                      </button>
-                  </span>
-              </div> <!-- Quantity selector -->
+              <div class="quantity-selector">
+                <p class="quantity margined-2">Quantity:</p>
+                <div class="input-group">
+                    <span class="input-group-btn left-span">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input id="quantity-input" type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                    <span class="input-group-btn right-span">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div> <!-- Quantity selector -->
+              </div>
               <div class="clear"></div>
               <button id="addToCart" type="button" class="btn btn-default margined-3 menu-btn">Add to cart</button>
               <hr>
@@ -256,7 +242,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-10 col-lg-11 col-lg-offset-1">
           <div class="copyrights col-xs-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-1">
-            <p>&copy; 2015 by Thingy Shop. Created with &hearts; by <a href="https://ua.linkedin.com/in/dvasylenko">Daniyil Vasylenko</a></p>
+            <p>&copy; 2016 by Thingy Shop. Created by <a href="https://ua.linkedin.com/in/dvasylenko">Daniyil Vasylenko</a></p>
             <p>Many thanks to Noun Project for a bag icon, created by Zlatko Najdenovski</p>
           </div>
           <ul class="social col-xs-6 col-sm-4 col-md-4 col-lg-3">

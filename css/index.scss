@@ -46,6 +46,7 @@ main{
                 display:inline-block;
                 margin : 0;
                 max-width: 100%;
+                padding: 0;
                 .badgie{
                   z-index: 2;
                   position: absolute;
@@ -54,6 +55,7 @@ main{
                   font-family: $font-main;
                   padding: 0 20px 0 20px;
                   background-color: #F48FB1;
+                  border-radius: 3px 0px 0px 0px;
                 }
                 .figure{
                   img{
@@ -61,6 +63,7 @@ main{
                     max-height: 373px;
                     width:auto;
                     display:inline-block;
+                    border-radius:4px;
                   } //img
                 }
               } //thumbnail
@@ -107,8 +110,7 @@ main{
                 top: 0;
                 right: 10px;
                 button.btn-add{
-                  border: 1px solid #66BB6A;
-                  color: #66BB6A;
+                  border: 1px solid $col-grey-border;
                   border-radius: 0;
                   padding: 5px 10px;
                   border-radius: 4px;
@@ -119,6 +121,13 @@ main{
         } //main-section
       } //items-section
     } //row
+    .pagination{
+      li{
+        a{
+          color: $col-grey;
+        }
+      }
+    }
   } //fluid-container
 } //main
 
@@ -141,6 +150,7 @@ body{
                 display:inline-block;
                 .item-image{
                   display:inline-block;
+                  border: solid 1px white;
                   height: 100%;
                   width: 100%;
                   img{
@@ -149,7 +159,7 @@ body{
                   }
                 }
                 .image-selected{
-                  border: solid 2px $col-grey;
+                  border: solid 1px $col-grey;
                 }
               }
             }

@@ -20,6 +20,12 @@ $font-copyrights-size : 12px;
 $max-width: 90%;  //for items-section
 $push-width: 350px;
 
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .modal {
   border-radius: 0;
 }
@@ -170,7 +176,7 @@ main{
           } //menu-list
       }
 
-      .menu.visible-xs{
+      .menu{
         .top-menu-list{
           @extend .menu-list;
           .menu-item{
@@ -183,7 +189,7 @@ main{
             top: -1px;
 
             .cartBtn{
-              border-color: $col-success;
+              border-color: $col-grey-border;
               padding: 8px 13px;
               font-size: $font-size;
               color: $col-success;
@@ -191,45 +197,13 @@ main{
           } //cart
           .favourites{
             .favBtn{
-              border-color: $col-pink;
+              border-color: $col-grey-border;
               padding: 8px 13px;
               font-size: $font-size;
             }
           }
         }//menu-default
       }
-
-      //With floating like, cart buttons
-      .menu.hidden-xs{
-          .top-menu-list{
-            @extend .menu-list;
-            position: fixed;
-            right: 0;
-            top: 20%;
-            .menu-item{
-              border: none;
-              position:relative;
-              float:right;
-              clear:both;
-              button{
-                width:50px;
-                height:50px;
-                margin-top:5px;
-              }
-            }
-            .cartBtn{
-              border-color: $col-success;
-              padding: 8px 13px;
-              font-size: $font-size;
-              color: $col-success;
-            }
-            .favBtn{
-              border-color: $col-pink;
-              padding: 8px 13px;
-              font-size: $font-size;
-            }
-          } //menu-fixed
-      } //menu
     } //row
   } //flui-container
 } //main
@@ -262,12 +236,12 @@ footer{
       text-align: center;
       a{
         color: $col-grey;
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         display:block;
         i{
           position: relative;
-          top: 5px;
+          top: 8px;
         }
       }
     }
@@ -564,7 +538,7 @@ footer{
 //Hover .css classes overriding
 .hvr-ripple-out{
   &:before {
-    border: $col-grey solid 2px;
+    border: $col-grey-border solid 2px;
     border-radius: 50px;
   }
 }
@@ -581,8 +555,8 @@ footer{
   @extend .hvr-icon-fade;
   padding-right:12px;
   &:before{
-    content: "\f08a";
-    color: $col-red;
+    content: "\f004";
+    color: $col-grey;
     position:relative;
     right: 0;
   }
@@ -604,7 +578,7 @@ footer{
   font-size: $font-size + 6;
   &:before{
     content: "\f07a";
-    color: $col-success;
+    color: $col-grey;
     position:initial;
     padding: 0;
   }

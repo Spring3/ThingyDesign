@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/font-awesome.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="stylesheet" href="css/zoe.css"/>
+    <link rel="stylesheet" href="css/hint.min.css"/>
   </head>
 
   <header>
@@ -92,13 +93,13 @@
   <main class="margined-2">
     <div class="fluid-container">
       <div class="row">
-        <div class="menu col-xs-12 col-sm-12 col-md-10 col-md-offset-1 visible-xs">
+        <div class="menu col-xs-12 col-sm-12 col-md-10 col-md-offset-1 ">
           <ul class="top-menu-list row">
-            <li class="menu-item favourites col-xs-7 col-sm-3 col-sm-offset-5 col-lg-2 col-lg-offset-6 centered">
+            <li class="menu-item favourites col-xs-7 col-sm-3 col-sm-offset-5 col-lg-2 col-lg-offset-6 centered hint--top hint--rounded" data-hint="Favourites">
               <button type="submit" class="btn btn-default favBtn hvr-icon-pulse-grow-heart"></button>
             </li>
-            <li class="menu-item cart col-xs-5 col-sm-3 centered">
-              <button type="submit" class="btn btn-default cartBtn"><i class="fa fa-shopping-cart"></i></button>
+            <li class="menu-item cart col-xs-5 col-sm-3 centered hint--top hint--rounded" data-hint="Cart">
+              <button type="submit" class="btn btn-default cartBtn hvr-icon-pulse-grow-cart"></button>
             </li>
           </ul>
           <div class="margined-3"></div>
@@ -109,23 +110,6 @@
             <li class="menu-item col-xs-3 centered hvr-underline-reveal"><a href="#/">Blog</a></li>
           </ul>
         </div>
-        <div class="menu col-xs-12 col-sm-12 col-md-10 col-md-offset-1 hidden-xs">
-          <ul class="top-menu-list row">
-            <li class="menu-item favourites centered">
-              <button type="submit" class="btn btn-default favBtn hvr-icon-pulse-grow-heart"></button>
-            </li>
-            <li class="menu-item cart centered">
-              <button type="submit" class="btn btn-default cartBtn hvr-cart-pop"></button>
-            </li>
-          </ul>
-          <div class="margined-3"></div>
-          <ul class="menu-list row">
-            <li class="menu-item col-xs-3 col-sm-offset-1 centered hvr-underline-reveal"><a href="#/">Things</a></li>
-            <li class="menu-item col-xs-3 col-sm-2 centered hvr-underline-reveal"><a href="#/">Contacts</a></li>
-            <li class="menu-item col-xs-3 col-sm-2 centered hvr-underline-reveal"><a href="#/">About</a></li>
-            <li class="menu-item col-xs-3 centered hvr-underline-reveal"><a href="#/">Blog</a></li>
-          </ul>
-        </div> <!-- menu with fixed buttons -->
       </div>
     </div>
 
@@ -170,7 +154,7 @@
                   <p class="badgie"></p>
                   <figure class="figure">
                     <ul class="actionPanel">
-                      <li><i class="like fa fa-heart-o hvr-pop"></i></li>
+                      <li ><i class="like fa fa-heart-o hvr-pop"></i></li>
                     </ul>
                     <img class="img-responsive" src="img/1.jpg" alt="item"/>
                     <figcaption>
@@ -185,7 +169,7 @@
                   <p class="price-old invisible"></p>
                   <p class="price">$19.99</p>
                 </div>
-                <div class="btn-toCart">
+                <div class="btn-toCart hint--bottom hint--rounded" data-hint="Add to cart">
                   <button id="addToCart1" type="button" class="btn btn-add btn-default hvr-icon-pulse-grow-cart menu-btn"></button>
                 </div>
               </div>
@@ -212,7 +196,7 @@
                   <p class="price-old">$19.99</p>
                   <p class="price">$10.99</p>
                 </div>
-                <div class="btn-toCart">
+                <div class="btn-toCart hint--bottom hint--rounded" data-hint="Add to cart">
                   <button id="addToCart2" type="button" class="btn btn-add btn-default hvr-icon-pulse-grow-cart menu-btn"></button>
                 </div>
               </div>
@@ -239,7 +223,7 @@
                   <p class="price-old invisible"></p>
                   <p class="price">$19.99</p>
                 </div>
-                <div class="btn-toCart">
+                <div class="btn-toCart hint--bottom hint--rounded" data-hint="Add to cart">
                   <button id="addToCart3" type="button" class="btn btn-add btn-default hvr-icon-pulse-grow-cart menu-btn"></button>
                 </div>
               </div>
@@ -266,7 +250,7 @@
                   <p class="price-old invisible"></p>
                   <p class="price">$19.99</p>
                 </div>
-                <div class="btn-toCart">
+                <div class="btn-toCart hint--bottom hint--rounded" data-hint="Add to cart">
                   <button id="addToCart4" type="button" class="btn btn-add btn-default hvr-icon-pulse-grow-cart menu-btn"></button>
                 </div>
               </div>
@@ -278,7 +262,7 @@
       </div>
 
       <div class="row">
-        <div class="paginator col-xs-12 col-sm-6 col-sm-offset-3 centered">
+        <div class="paginator col-xs-12 col-sm-6 col-sm-offset-3 centered margined-2">
           <ul class="pagination margined-3">
             <li>
               <a class="hvr-shutter-in-vertical" href="#/" aria-label="Previous">
@@ -310,7 +294,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-10 col-lg-11 col-lg-offset-1">
           <div class="copyrights col-xs-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-1">
-            <p>&copy; 2015 by Thingy Shop. Created with &hearts; by <a href="https://ua.linkedin.com/in/dvasylenko">Daniyil Vasylenko</a></p>
+            <p>&copy; 2016 by Thingy Shop. Created with by <a href="https://ua.linkedin.com/in/dvasylenko">Daniyil Vasylenko</a></p>
             <p>Many thanks to Noun Project for a bag icon, created by Zlatko Najdenovski</p>
           </div>
           <ul class="social col-xs-6 col-sm-4 col-md-4 col-lg-3">

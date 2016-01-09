@@ -18,7 +18,7 @@ $(document).ready(function(){
 
   //click on the Read More sliding button
   $('.readMore').click(function(event){
-    if ($(window).width() > 767){
+    if ($(document).width() > 767){
       event.preventDefault();
       $('#testModal').modal('show');
     }

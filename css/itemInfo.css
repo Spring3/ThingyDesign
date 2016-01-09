@@ -4004,6 +4004,11 @@
     width: 25px;
     height: 25px; }
 
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 .modal {
   border-radius: 0; }
 
@@ -4098,11 +4103,11 @@ main {
     padding: 0; }
     main .fluid-container .row .menu a {
       color: #424242; }
-    main .fluid-container .row .menu .menu-list, main .fluid-container .row .menu.visible-xs .top-menu-list, main .fluid-container .row .menu.hidden-xs .top-menu-list {
+    main .fluid-container .row .menu .menu-list, main .fluid-container .row .menu .top-menu-list {
       list-style-type: none;
       margin: 0 auto;
       padding: 0; }
-      main .fluid-container .row .menu .menu-list .menu-item, main .fluid-container .row .menu.visible-xs .top-menu-list .menu-item, main .fluid-container .row .menu.hidden-xs .top-menu-list .menu-item {
+      main .fluid-container .row .menu .menu-list .menu-item, main .fluid-container .row .menu .top-menu-list .menu-item {
         display: inline;
         line-height: 2;
         font-family: "Raleway";
@@ -4110,49 +4115,27 @@ main {
         font-weight: 400;
         border-top: solid 1px #424242;
         border-bottom: solid 1px #424242; }
-        main .fluid-container .row .menu .menu-list .menu-item a, main .fluid-container .row .menu.visible-xs .top-menu-list .menu-item a, main .fluid-container .row .menu.hidden-xs .top-menu-list .menu-item a {
+        main .fluid-container .row .menu .menu-list .menu-item a, main .fluid-container .row .menu .top-menu-list .menu-item a {
           display: block;
           text-decoration: none; }
-          main .fluid-container .row .menu .menu-list .menu-item a:hover, main .fluid-container .row .menu.visible-xs .top-menu-list .menu-item a:hover, main .fluid-container .row .menu.hidden-xs .top-menu-list .menu-item a:hover, main .fluid-container .row .menu .menu-list .menu-item a:active, main .fluid-container .row .menu.visible-xs .top-menu-list .menu-item a:active, main .fluid-container .row .menu.hidden-xs .top-menu-list .menu-item a:active, main .fluid-container .row .menu .menu-list .menu-item a:visited, main .fluid-container .row .menu.visible-xs .top-menu-list .menu-item a:visited, main .fluid-container .row .menu.hidden-xs .top-menu-list .menu-item a:visited {
+          main .fluid-container .row .menu .menu-list .menu-item a:hover, main .fluid-container .row .menu .top-menu-list .menu-item a:hover, main .fluid-container .row .menu .menu-list .menu-item a:active, main .fluid-container .row .menu .top-menu-list .menu-item a:active, main .fluid-container .row .menu .menu-list .menu-item a:visited, main .fluid-container .row .menu .top-menu-list .menu-item a:visited {
             text-decoration: none; }
-  main .fluid-container .row .menu.visible-xs .top-menu-list .menu-item {
+  main .fluid-container .row .menu .top-menu-list .menu-item {
     border: none; }
-  main .fluid-container .row .menu.visible-xs .top-menu-list .cart {
+  main .fluid-container .row .menu .top-menu-list .cart {
     line-height: 2.5;
     display: inline-block;
     position: relative;
     top: -1px; }
-    main .fluid-container .row .menu.visible-xs .top-menu-list .cart .cartBtn {
-      border-color: #66BB6A;
+    main .fluid-container .row .menu .top-menu-list .cart .cartBtn {
+      border-color: #ddd;
       padding: 8px 13px;
       font-size: 20px;
       color: #66BB6A; }
-  main .fluid-container .row .menu.visible-xs .top-menu-list .favourites .favBtn {
-    border-color: #F48FB1;
+  main .fluid-container .row .menu .top-menu-list .favourites .favBtn {
+    border-color: #ddd;
     padding: 8px 13px;
     font-size: 20px; }
-  main .fluid-container .row .menu.hidden-xs .top-menu-list {
-    position: fixed;
-    right: 0;
-    top: 20%; }
-    main .fluid-container .row .menu.hidden-xs .top-menu-list .menu-item {
-      border: none;
-      position: relative;
-      float: right;
-      clear: both; }
-      main .fluid-container .row .menu.hidden-xs .top-menu-list .menu-item button {
-        width: 50px;
-        height: 50px;
-        margin-top: 5px; }
-    main .fluid-container .row .menu.hidden-xs .top-menu-list .cartBtn {
-      border-color: #66BB6A;
-      padding: 8px 13px;
-      font-size: 20px;
-      color: #66BB6A; }
-    main .fluid-container .row .menu.hidden-xs .top-menu-list .favBtn {
-      border-color: #F48FB1;
-      padding: 8px 13px;
-      font-size: 20px; }
 
 @supports (-ms-accelerator: true) {
   main .menu.hidden-xs .top-menu-list {
@@ -4169,12 +4152,12 @@ footer .social {
     text-align: center; }
     footer .social li a {
       color: #424242;
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
       display: block; }
       footer .social li a i {
         position: relative;
-        top: 5px; }
+        top: 8px; }
 
 .pushy {
   background: #2C2C2B;
@@ -4383,7 +4366,7 @@ footer .social {
     .pushy .wrapper .cart-insides {
       height: 60%; } }
 .hvr-ripple-out:before {
-  border: #424242 solid 2px;
+  border: #ddd solid 2px;
   border-radius: 50px; }
 
 .hvr-shutter-in-vertical {
@@ -4394,8 +4377,8 @@ footer .social {
 .hvr-icon-pulse-grow-heart {
   padding-right: 12px; }
   .hvr-icon-pulse-grow-heart:before {
-    content: "\f08a";
-    color: #C62828;
+    content: "\f004";
+    color: #424242;
     position: relative;
     right: 0; }
   .hvr-icon-pulse-grow-heart:hover:before, .hvr-icon-pulse-grow-heart:focus:before, .hvr-icon-pulse-grow-heart:active:before {
@@ -4406,7 +4389,7 @@ footer .social {
   font-size: 26px; }
   .hvr-icon-pulse-grow-cart:before {
     content: "\f07a";
-    color: #66BB6A;
+    color: #424242;
     position: initial;
     padding: 0; }
   .hvr-icon-pulse-grow-cart:hover:before, .hvr-icon-pulse-grow-cart:focus:before, .hvr-icon-pulse-grow-cart:active:before {
@@ -4440,21 +4423,22 @@ footer .social {
       display: inline-block; }
       .main-info .left-part .image-list li .item-image {
         display: inline-block;
-        border: solid 2px white;
+        border: solid 1px white;
         height: 100%;
         width: 100%; }
         .main-info .left-part .image-list li .item-image img {
           width: 50px;
           height: 50px; }
       .main-info .left-part .image-list li .image-selected {
-        border: solid 2px #424242; }
+        border: solid 1px #424242; }
   .main-info .right-part h4 {
     font-size: 20px;
     font-family: "Raleway"; }
   .main-info .right-part #item-price {
-    font-size: 20px;
     font-family: "Raleway";
-    display: inline-block; }
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold; }
   .main-info .right-part .quantity {
     font-size: 12px;
     font-family: "Raleway";
@@ -4526,5 +4510,31 @@ footer .social {
       color: #55acee; }
       .main-info .right-part .social .icons .twit:hover {
         color: #66bdff; }
+
+@media screen and (max-width: 767px) {
+  .image-list {
+    display: block !important;
+    text-align: center; }
+
+  #addToCart {
+    max-width: 423px;
+    margin: 30px auto 0 auto; }
+
+  .description {
+    text-align: center; }
+
+  #item-price {
+    display: block !important;
+    text-align: center; }
+
+  .quantity-selector {
+    text-align: center; }
+
+  .right-span {
+    float: left !important; }
+
+  .input-group {
+    position: relative !important;
+    left: 30px; } }
 
 /*# sourceMappingURL=itemInfo.css.map */
