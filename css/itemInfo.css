@@ -4414,7 +4414,9 @@ footer .social {
     padding: 15px;
     margin: 0; }
   .main-info .left-part #current-item-image {
-    max-height: 400px; }
+    max-height: 400px;
+    border-radius: 4px;
+    border: solid 1px #ddd; }
   .main-info .left-part .image-list {
     list-style-type: none;
     padding: 0;
@@ -4423,12 +4425,14 @@ footer .social {
       display: inline-block; }
       .main-info .left-part .image-list li .item-image {
         display: inline-block;
-        border: solid 1px white;
+        border: solid 1px #ddd;
+        border-radius: 4px;
         height: 100%;
         width: 100%; }
         .main-info .left-part .image-list li .item-image img {
           width: 50px;
-          height: 50px; }
+          height: 50px;
+          border-radius: 4px; }
       .main-info .left-part .image-list li .image-selected {
         border: solid 1px #424242; }
   .main-info .left-part .related-items ul {
@@ -4437,21 +4441,24 @@ footer .social {
     .main-info .left-part .related-items ul .related-item {
       display: inline-block; }
       .main-info .left-part .related-items ul .related-item a {
-        display: inline-block; }
+        display: inline-block;
+        border: solid 1px #ddd;
+        border-radius: 4px; }
         .main-info .left-part .related-items ul .related-item a .itemImage {
           position: relative; }
           .main-info .left-part .related-items ul .related-item a .itemImage figure {
             z-index: 2; }
             .main-info .left-part .related-items ul .related-item a .itemImage figure img {
               max-width: 150px;
-              max-height: 150px; }
+              max-height: 150px;
+              border-radius: 4px; }
             .main-info .left-part .related-items ul .related-item a .itemImage figure figcaption {
               background: transparent;
               padding: 0; }
             .main-info .left-part .related-items ul .related-item a .itemImage figure:hover img {
               transform: translateY(150px);
               opacity: 1;
-              transition: transform 1s, opacoty 1s; }
+              transition: transform 1s; }
             .main-info .left-part .related-items ul .related-item a .itemImage figure:hover figcaption {
               background: transparent;
               transform: translateY(-100px); }
