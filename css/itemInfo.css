@@ -4431,6 +4431,38 @@ footer .social {
           height: 50px; }
       .main-info .left-part .image-list li .image-selected {
         border: solid 1px #424242; }
+  .main-info .left-part .related-items ul {
+    list-style-type: none;
+    padding: 0; }
+    .main-info .left-part .related-items ul .related-item {
+      display: inline-block; }
+      .main-info .left-part .related-items ul .related-item a {
+        display: inline-block; }
+        .main-info .left-part .related-items ul .related-item a .itemImage {
+          position: relative; }
+          .main-info .left-part .related-items ul .related-item a .itemImage figure {
+            z-index: 2; }
+            .main-info .left-part .related-items ul .related-item a .itemImage figure img {
+              max-width: 150px;
+              max-height: 150px; }
+            .main-info .left-part .related-items ul .related-item a .itemImage figure figcaption {
+              background: transparent;
+              padding: 0; }
+            .main-info .left-part .related-items ul .related-item a .itemImage figure:hover img {
+              transform: translateY(150px);
+              opacity: 1;
+              transition: transform 1s, opacoty 1s; }
+            .main-info .left-part .related-items ul .related-item a .itemImage figure:hover figcaption {
+              background: transparent;
+              transform: translateY(-100px); }
+          .main-info .left-part .related-items ul .related-item a .itemImage p {
+            position: absolute;
+            top: 40%;
+            font-size: 30px;
+            z-index: 0;
+            width: 100%;
+            text-decoration: none;
+            color: #424242; }
   .main-info .right-part h4 {
     font-size: 20px;
     font-family: "Raleway"; }
