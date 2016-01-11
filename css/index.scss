@@ -4,23 +4,6 @@ main{
   font-family: $font-main;
   .fluid-container{
     .row{
-      .search{
-        .searchBar{
-          form{
-            .form-group{
-              .input-search{
-                width:60%;
-                display:inline;
-              }
-              button{
-                position:relative;
-                top: -1px;
-              }
-            } //form-group
-          } //form
-        } //searchBar
-      } //search
-
       .items-section{
         .main-section{
           max-width: $max-width;
@@ -83,7 +66,7 @@ main{
                   display:block;
                   width:80%;
                   height: 100%;
-                  color: $col-grey !important;
+                  color: $col-gray !important;
                   &:hover, &:active, &:visited{
                     text-decoration: none;
                   }
@@ -95,13 +78,13 @@ main{
                   position: relative;
                   margin: 0 5px 0 0;
                   display:inline-block;
-                  color: $col-grey-light-2;
+                  color: $col-gray-light-2;
                   text-decoration: line-through;
                 }
                 .price{
                   margin: 0 auto;
                   display:inline-block;
-                  color: $col-grey-light;
+                  color: $col-gray-light;
                   font-size: $font-xs-size;
                 } //price
               } //price-container
@@ -111,7 +94,7 @@ main{
                 top: 0;
                 right: 10px;
                 button.btn-add{
-                  border: 1px solid $col-grey-border;
+                  border: 1px solid $col-gray-border;
                   border-radius: 0;
                   padding: 5px 10px;
                   border-radius: 4px;
@@ -125,7 +108,7 @@ main{
     .pagination{
       li{
         a{
-          color: $col-grey;
+          color: $col-gray;
         }
       }
     }
@@ -160,7 +143,7 @@ body{
                   }
                 }
                 .image-selected{
-                  border: solid 1px $col-grey;
+                  border: solid 1px $col-gray;
                 }
               }
             }
@@ -169,9 +152,9 @@ body{
             #itemName{
               font-size: $font-size;
               font-family: $font-main;
-              background: $col-grey-back;
-              border-top: solid 1px $col-grey-border;
-              border-bottom: solid 1px $col-grey-border;
+              background: $col-gray-back;
+              border-top: solid 1px $col-gray-border;
+              border-bottom: solid 1px $col-gray-border;
               padding: 15px;
               margin:0;
             }
@@ -193,7 +176,7 @@ body{
             .quantity{
               font-size: $font-tiny-size;
               font-family: $font-main;
-              color: $col-grey-light;
+              color: $col-gray-light;
             }
             .input-group{
               display:inline-block;

@@ -1,11 +1,11 @@
 @import 'hover';
 $col-backg-main : white;  //main background color for html section
 $col-charcoal: #2C2C2B;
-$col-grey : #424242;
-$col-grey-light: #9E9E9E;
-$col-grey-light-2: #E0E0E0;
-$col-grey-back: #f5f5f5;
-$col-grey-border: #ddd;
+$col-gray : #424242;
+$col-gray-light: #9E9E9E;
+$col-gray-light-2: #E0E0E0;
+$col-gray-back: #f5f5f5;
+$col-gray-border: #ddd;
 $col-success: #66BB6A;
 $col-pink: #F48FB1;
 $col-red : #C62828;
@@ -57,6 +57,9 @@ $push-width: 350px;
 
 .margined-3{
   margin-top: 30px;
+}
+.margined-xl{
+  margin-top: 50px;
 }
 
 .margined-xxl{
@@ -116,7 +119,7 @@ header{
       .brand{
         font-family: $font-main;
         font-size: $font-size;
-        color: $col-grey;
+        color: $col-gray;
         font-weight: 400;
         text-rendering: optimizeLegibility;
         -moz-osx-font-smoothing: grayscale;
@@ -127,10 +130,10 @@ header{
         height: 1px;
         width: 260px;
         margin: 0 auto;
-        background-color: $col-grey;
+        background-color: $col-gray;
       } //hline
       .caption{
-        color: $col-grey;
+        color: $col-gray;
         font-family: $font-main;
         font-size: 18px;
         font-weight: 400;
@@ -151,7 +154,7 @@ main{
         display:block;
         padding: 0;
         a{
-          color: $col-grey;
+          color: $col-gray;
         }
           .menu-list{
             list-style-type: none;
@@ -163,8 +166,8 @@ main{
               font-family: $font-main;
               font-size: $font-sm-size;
               font-weight: 400;
-              border-top: solid 1px $col-grey;
-              border-bottom: solid 1px $col-grey;
+              border-top: solid 1px $col-gray;
+              border-bottom: solid 1px $col-gray;
               a{
                 display:block;
                 text-decoration: none;
@@ -189,7 +192,7 @@ main{
             top: -1px;
 
             .cartBtn{
-              border-color: $col-grey-border;
+              border-color: $col-gray-border;
               padding: 8px 13px;
               font-size: $font-size;
               color: $col-success;
@@ -197,7 +200,7 @@ main{
           } //cart
           .favourites{
             .favBtn{
-              border-color: $col-grey-border;
+              border-color: $col-gray-border;
               padding: 8px 13px;
               font-size: $font-size;
             }
@@ -206,6 +209,22 @@ main{
       }
     } //row
   } //flui-container
+  .search{
+    .searchBar{
+      form{
+        .form-group{
+          .input-search{
+            width:60%;
+            display:inline;
+          }
+          button{
+            position:relative;
+            top: -1px;
+          }
+        } //form-group
+      } //form
+    } //searchBar
+  } //search
 } //main
 
 //Hack for microsoft browsers
@@ -235,7 +254,7 @@ footer{
       border-radius: 50%;
       text-align: center;
       a{
-        color: $col-grey;
+        color: $col-gray;
         width: 45px;
         height: 45px;
         display:block;
@@ -320,7 +339,7 @@ footer{
           left: 40%;
           .cart-item-name{
             font-size:$font-size - 2;
-            color: $col-grey-light;
+            color: $col-gray-light;
           }
 
         }
@@ -538,7 +557,7 @@ footer{
 //Hover .css classes overriding
 .hvr-ripple-out{
   &:before {
-    border: $col-grey-border solid 2px;
+    border: $col-gray-border solid 2px;
     border-radius: 50px;
   }
 }
@@ -556,7 +575,7 @@ footer{
   padding-right:12px;
   &:before{
     content: "\f004";
-    color: $col-grey;
+    color: $col-gray;
     position:relative;
     right: 0;
   }
@@ -578,7 +597,7 @@ footer{
   font-size: $font-size + 6;
   &:before{
     content: "\f07a";
-    color: $col-grey;
+    color: $col-gray;
     position:initial;
     padding: 0;
   }

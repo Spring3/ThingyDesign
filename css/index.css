@@ -4034,6 +4034,9 @@
 .margined-3, main .fluid-container .row .items-section .main-section .item {
   margin-top: 30px; }
 
+.margined-xl {
+  margin-top: 50px; }
+
 .margined-xxl {
   margin-top: 100px; }
 
@@ -4136,6 +4139,12 @@ main {
     border-color: #ddd;
     padding: 8px 13px;
     font-size: 20px; }
+  main .search .searchBar form .form-group .input-search {
+    width: 60%;
+    display: inline; }
+  main .search .searchBar form .form-group button {
+    position: relative;
+    top: -1px; }
 
 @supports (-ms-accelerator: true) {
   main .menu.hidden-xs .top-menu-list {
@@ -4405,12 +4414,6 @@ footer .social {
     margin: 0 auto; } }
 main {
   font-family: "Raleway"; }
-  main .fluid-container .row .search .searchBar form .form-group .input-search {
-    width: 60%;
-    display: inline; }
-  main .fluid-container .row .search .searchBar form .form-group button {
-    position: relative;
-    top: -1px; }
   main .fluid-container .row .items-section .main-section {
     max-width: 90%;
     margin: 0 auto; }

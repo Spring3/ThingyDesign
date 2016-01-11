@@ -4412,217 +4412,110 @@ footer .social {
 @media screen and (max-width: 767px) {
   #current-item-image {
     margin: 0 auto; } }
-.main-info {
-  font-family: "Raleway"; }
-  .main-info #itemName {
-    font-size: 20px;
-    font-family: "Raleway";
-    background: #f5f5f5;
-    border-top: solid 1px #ddd;
-    border-bottom: solid 1px #ddd;
-    padding: 15px;
-    margin: 0; }
-  .main-info .left-part #current-item-image {
-    max-height: 400px;
-    border-radius: 4px;
-    border: solid 1px #ddd; }
-  .main-info .left-part .image-list {
+body article.contactsInfo .header {
+  font-weight: bold;
+  font-size: 20px; }
+body article.contactsInfo .wrapper .image-container {
+  max-width: 300px;
+  margin: 0 auto; }
+  body article.contactsInfo .wrapper .image-container img {
+    max-width: 100%; }
+body article.contactsInfo .middle-wrapper .info ul {
+  padding: 35px 55px;
+  color: #424242;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  text-align: left;
+  margin: 20px;
+  list-style-type: none;
+  display: inline-block; }
+  body article.contactsInfo .middle-wrapper .info ul li {
+    border-bottom: solid 1px #ddd; }
+  body article.contactsInfo .middle-wrapper .info ul .header {
+    font-size: 30px;
+    position: relative;
+    top: -10px;
+    border: none;
+    font-weight: 100; }
+  body article.contactsInfo .middle-wrapper .info ul .item-info {
+    font-weight: bold;
+    margin-top: 5px; }
+    body article.contactsInfo .middle-wrapper .info ul .item-info span {
+      font-weight: 400; }
+  body article.contactsInfo .middle-wrapper .info ul .caption {
+    position: relative;
+    bottom: -10px;
+    border: none;
+    font-weight: 100; }
+body article.contactsInfo section.social {
+  top: -10px; }
+  body article.contactsInfo section.social header {
+    color: #424242; }
+  body article.contactsInfo section.social .icons {
     list-style-type: none;
-    padding: 0;
-    display: inline-block; }
-    .main-info .left-part .image-list li {
-      display: inline-block; }
-      .main-info .left-part .image-list li .item-image {
-        display: inline-block;
-        border: solid 1px #ddd;
-        border-radius: 4px;
-        height: 100%;
-        width: 100%; }
-        .main-info .left-part .image-list li .item-image img {
-          width: 50px;
-          height: 50px;
-          border-radius: 4px; }
-      .main-info .left-part .image-list li .image-selected {
-        border: solid 1px #424242; }
-  .main-info .left-part .related-items ul {
-    list-style-type: none;
-    padding: 0; }
-    .main-info .left-part .related-items ul .related-item {
-      display: inline-block; }
-      .main-info .left-part .related-items ul .related-item a {
-        display: inline-block;
-        border: solid 1px #ddd;
-        border-radius: 4px; }
-        .main-info .left-part .related-items ul .related-item a .itemImage {
-          position: relative; }
-          .main-info .left-part .related-items ul .related-item a .itemImage figure {
-            z-index: 2; }
-            .main-info .left-part .related-items ul .related-item a .itemImage figure img {
-              max-width: 150px;
-              max-height: 150px;
-              border-radius: 4px; }
-            .main-info .left-part .related-items ul .related-item a .itemImage figure figcaption {
-              background: transparent;
-              padding: 0; }
-            .main-info .left-part .related-items ul .related-item a .itemImage figure:hover img {
-              transform: translateY(150px);
-              opacity: 1;
-              transition: transform 1s; }
-            .main-info .left-part .related-items ul .related-item a .itemImage figure:hover figcaption {
-              background: transparent;
-              transform: translateY(-100px); }
-          .main-info .left-part .related-items ul .related-item a .itemImage p {
-            position: absolute;
-            top: 40%;
-            font-size: 30px;
-            z-index: 0;
-            width: 100%;
-            text-decoration: none;
-            color: #424242; }
-  .main-info .right-part h4 {
-    font-size: 20px;
-    font-family: "Raleway"; }
-  .main-info .right-part #item-price {
-    font-family: "Raleway";
     display: inline-block;
-    font-size: 25px;
-    font-weight: bold; }
-  .main-info .right-part .quantity {
-    font-size: 12px;
-    font-family: "Raleway";
-    color: #9E9E9E; }
-  .main-info .right-part .input-group {
-    display: inline-block; }
-    .main-info .right-part .input-group .left-span, .main-info .right-part .input-group .right-span {
+    margin: 0;
+    padding: 0; }
+    body article.contactsInfo section.social .icons .icon {
+      display: inline;
+      cursor: pointer;
+      font-size: 30px;
+      margin-right: 10px; }
+    body article.contactsInfo section.social .icons .fb {
+      color: #3b5998; }
+      body article.contactsInfo section.social .icons .fb:hover {
+        color: #4c7aa9; }
+    body article.contactsInfo section.social .icons .gplus {
+      color: #dc4e41; }
+      body article.contactsInfo section.social .icons .gplus:hover {
+        color: #ed5f52; }
+    body article.contactsInfo section.social .icons .vk {
+      color: #45668e; }
+      body article.contactsInfo section.social .icons .vk:hover {
+        color: #56779f; }
+    body article.contactsInfo section.social .icons .pin {
+      color: #bd081c; }
+      body article.contactsInfo section.social .icons .pin:hover {
+        color: #ce192d; }
+    body article.contactsInfo section.social .icons .insta {
+      color: #3f729b; }
+      body article.contactsInfo section.social .icons .insta:hover {
+        color: #5083ac; }
+    body article.contactsInfo section.social .icons .twit {
+      color: #55acee; }
+      body article.contactsInfo section.social .icons .twit:hover {
+        color: #66bdff; }
+body article.contactsInfo .quotes ul {
+  list-style-type: none; }
+  body article.contactsInfo .quotes ul li {
+    text-align: both;
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+    max-width: 250px;
+    padding: 10px;
+    border: solid 1px #ddd;
+    border-radius: 4px; }
+    body article.contactsInfo .quotes ul li hr {
+      margin-top: 5px;
+      margin-bottom: 5px; }
+    body article.contactsInfo .quotes ul li p {
+      margin: 0; }
+    body article.contactsInfo .quotes ul li .caption {
+      position: relative;
       display: inline-block;
-      margin-right: 30px;
-      float: left; }
-    .main-info .right-part .input-group #quantity-input {
-      display: inline-block;
-      width: 50px;
-      text-align: center; }
-    .main-info .right-part .input-group .right-span {
-      float: none; }
-  .main-info .right-part #addToCart {
-    display: block;
-    border-radius: 0;
-    width: 100%;
-    padding: 15px 12px;
-    background-color: #F48FB1;
-    color: white;
-    font-size: 16px;
-    font-family: "Raleway"; }
-  .main-info .right-part .panel {
-    border-left: none;
-    border-right: none;
-    border-bottom: none; }
-    .main-info .right-part .panel .panel-heading .panel-title a {
-      text-decoration: none; }
-      .main-info .right-part .panel .panel-heading .panel-title a:hover, .main-info .right-part .panel .panel-heading .panel-title a:active, .main-info .right-part .panel .panel-heading .panel-title a:visited {
-        text-decoration: none !important; }
-      .main-info .right-part .panel .panel-heading .panel-title a span {
-        font-size: 35px;
-        font-weight: 100;
+      width: 100%;
+      margin-top: 5px; }
+      body article.contactsInfo .quotes ul li .caption .author, body article.contactsInfo .quotes ul li .caption .date {
+        color: #9E9E9E;
+        float: right;
+        font-weight: bold;
+        color: #2C2C2B; }
+      body article.contactsInfo .quotes ul li .caption .date {
+        float: left;
         position: relative;
-        top: -8px; }
-  .main-info .right-part .social {
-    top: -10px; }
-    .main-info .right-part .social .icons {
-      list-style-type: none;
-      display: inline-block;
-      margin: 0;
-      padding: 0; }
-      .main-info .right-part .social .icons .icon {
-        display: inline;
-        cursor: pointer;
-        font-size: 20px;
-        margin-right: 10px; }
-      .main-info .right-part .social .icons .fb {
-        color: #3b5998; }
-        .main-info .right-part .social .icons .fb:hover {
-          color: #4c7aa9; }
-      .main-info .right-part .social .icons .gplus {
-        color: #dc4e41; }
-        .main-info .right-part .social .icons .gplus:hover {
-          color: #ed5f52; }
-      .main-info .right-part .social .icons .vk {
-        color: #45668e; }
-        .main-info .right-part .social .icons .vk:hover {
-          color: #56779f; }
-      .main-info .right-part .social .icons .pin {
-        color: #bd081c; }
-        .main-info .right-part .social .icons .pin:hover {
-          color: #ce192d; }
-      .main-info .right-part .social .icons .insta {
-        color: #3f729b; }
-        .main-info .right-part .social .icons .insta:hover {
-          color: #5083ac; }
-      .main-info .right-part .social .icons .twit {
-        color: #55acee; }
-        .main-info .right-part .social .icons .twit:hover {
-          color: #66bdff; }
-  .main-info .right-part .related-items.visible-xs {
-    text-align: center; }
-    .main-info .right-part .related-items.visible-xs ul {
-      list-style-type: none;
-      padding: 0; }
-      .main-info .right-part .related-items.visible-xs ul .related-item {
-        display: inline-block; }
-        .main-info .right-part .related-items.visible-xs ul .related-item a {
-          display: inline-block;
-          border: solid 1px #ddd;
-          border-radius: 4px; }
-          .main-info .right-part .related-items.visible-xs ul .related-item a .itemImage {
-            position: relative;
-            z-index: 2;
-            /*figure{
-              z-index:2;*/ }
-            .main-info .right-part .related-items.visible-xs ul .related-item a .itemImage img {
-              max-width: 150px;
-              max-height: 150px;
-              border-radius: 4px; }
-            .main-info .right-part .related-items.visible-xs ul .related-item a .itemImage figcaption {
-              background: transparent;
-              padding: 0; }
-            .main-info .right-part .related-items.visible-xs ul .related-item a .itemImage .back {
-              background: #E0E0E0;
-              opacity: 0.6;
-              position: absolute;
-              bottom: 0px;
-              width: 100%;
-              height: 40px; }
-            .main-info .right-part .related-items.visible-xs ul .related-item a .itemImage p {
-              position: absolute;
-              bottom: -10px;
-              font-size: 30px;
-              width: 100%;
-              text-decoration: none;
-              color: #424242; }
+        bottom: -4px;
+        color: #9E9E9E;
+        font-size: 12px; }
 
-@media screen and (max-width: 767px) {
-  .image-list {
-    display: block !important;
-    text-align: center; }
-
-  #addToCart {
-    max-width: 423px;
-    margin: 30px auto 0 auto; }
-
-  .description {
-    text-align: center; }
-
-  #item-price {
-    display: block !important;
-    text-align: center; }
-
-  .quantity-selector {
-    text-align: center; }
-
-  .right-span {
-    float: left !important; }
-
-  .input-group {
-    position: relative !important;
-    left: 30px; } }
-
-/*# sourceMappingURL=itemInfo.css.map */
+/*# sourceMappingURL=contacts.css.map */
