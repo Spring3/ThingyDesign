@@ -2,11 +2,12 @@
 <html>
   <meta lang="en" charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+
   <head>
     <title>Thingy Shop</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
     <link rel="stylesheet" href="../css/itemInfo.css"/>
     <link rel="stylesheet" href="../css/hint.min.css"/>
     <link rel="stylesheet" href="../css/zoe.css"/>
@@ -23,6 +24,17 @@
           <div class="hline"></div>
           <p class="caption margined">Cool stuff for everyone</p>
         </div>
+
+        <ul class="top-menu-list col-xs-2 col-xs-offset-10 col-sm-1 col-sm-offset-10 col-lg-1 col-lg-offset-10">
+          <li class="menu-item favourites centered hint--top hint--rounded" data-hint="Favourites">
+            <button type="submit" class="btn btn-default favBtn hvr-icon-pulse-grow-heart"></button>
+          </li>
+          <li class="menu-item cart centered hint--top hint--rounded" data-hint="Cart">
+            <form action="html/cart.html" method="GET">
+              <button type="submit" class="btn btn-default cartBtn hvr-icon-pulse-grow-cart"></button>
+            </form>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -83,7 +95,9 @@
         </li>
       </ul>
       <h3 class="total centered">Subtotal: <span class="cart-total"><span>$</span>100</span></h3>
-      <button type="button" class="btn btn-default opensCart">View cart</button>
+      <form method="get" action="../html/cart.html">
+        <button type="button" class="btn btn-default opensCart">View cart</button>
+      </form>
     </div>
   </nav>
 
@@ -93,20 +107,11 @@
     <div class="fluid-container">
       <div class="row">
         <div class="menu col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
-          <ul class="top-menu-list row">
-            <li class="menu-item favourites col-xs-6 col-sm-3 col-sm-offset-6 col-lg-1 col-lg-offset-7 centered hint--top hint--rounded" data-hint="Favourites">
-              <button type="submit" class="btn btn-default favBtn hvr-icon-pulse-grow-heart"></button>
-            </li>
-            <li class="menu-item cart col-xs-6 col-sm-3 col-lg-offset-1 centered hint--top hint--rounded" data-hint="Cart">
-              <button type="submit" class="btn btn-default cartBtn hvr-icon-pulse-grow-cart"></button>
-            </li>
-          </ul>
-          <div class="margined-3"></div>
           <ul class="menu-list row">
-            <li class="menu-item col-xs-3 centered hvr-underline-reveal"><a href="../index.html">Things</a></li>
-            <li class="menu-item col-xs-3 centered hvr-underline-reveal"><a href="../html/contacts.html">Contacts</a></li>
-            <li class="menu-item col-xs-3 centered hvr-underline-reveal"><a href="#/">FAQ</a></li>
-            <li class="menu-item col-xs-3 centered hvr-underline-reveal"><a href="#/">Blog</a></li>
+            <li class="menu-item col-xs-3 centered"><a href="../index.html">Things</a></li>
+            <li class="menu-item col-xs-3 centered"><a href="../html/contacts.html">Contacts</a></li>
+            <li class="menu-item col-xs-3 centered"><a href="#/">FAQ</a></li>
+            <li class="menu-item col-xs-3 centered"><a href="#/">Blog</a></li>
           </ul>
         </div>
       </div>
@@ -380,17 +385,18 @@
   </body>
 
   <footer class="margined-2">
+
     <div class="fluid-container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="copyrights col-xs-6 col-md-offset-0 col-lg-offset-1">
+          <div class="copyrights col-xs-6 col-md-offset-0 col-lg-5 col-lg-offset-1">
             <p>&copy; 2016 by Thingy Shop. Created by <a href="https://ua.linkedin.com/in/dvasylenko">Daniyil Vasylenko</a></p>
             <p>Many thanks to Noun Project for a bag icon, created by Zlatko Najdenovski</p>
           </div>
-          <ul class="social col-xs-6 col-sm-6 col-md-6 col-lg-4">
-            <li class="margined-b"><a class="hvr-ripple-out margined" href="#/"><i class="fa fa-vk fa-2x fa-fw"></i></a></li>
-            <li class="margined-b"><a class="hvr-ripple-out margined" href="#/"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
-            <li class="margined-b"><a class="hvr-ripple-out margined" href="#/"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+          <ul class="social col-xs-6 col-sm-6 col-md-6 col-lg-5">
+            <li class="margined-b"><a class="hvr-ripple-out" href="#/"><i class="fa fa-vk fa-2x fa-fw"></i></a></li>
+            <li class="margined-b"><a class="hvr-ripple-out" href="#/"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+            <li class="margined-b"><a class="hvr-ripple-out" href="#/"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
           </ul>
         </div>
       </div>

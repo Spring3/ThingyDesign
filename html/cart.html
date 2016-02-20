@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+<meta lang="en" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <head>
+    <title>Thingy Shop</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/cart.css"/>
+  </head>
+
+  <header>
+
+    <div class="label container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-xs-offset-0 col-sm-offset-4">
+          <a class="logo" href="../index.html">
+            <div class="img-div"></div>
+          </a>
+          <h4 class="brand">Thingy Shop</h4>
+          <div class="hline"></div>
+          <p class="caption margined">Cool stuff for everyone</p>
+        </div>
+        <ul class="top-menu-list col-xs-2 col-xs-offset-10 col-sm-1 col-sm-offset-10 col-lg-1 col-lg-offset-10">
+          <li class="menu-item favourites centered hint--top hint--rounded" data-hint="Favourites">
+            <button type="submit" class="btn btn-default favBtn hvr-icon-pulse-grow-heart"></button>
+          </li>
+          <li class="menu-item cart centered hint--top hint--rounded" data-hint="Cart">
+            <form action="html/cart.html" method="GET">
+              <button type="submit" class="btn btn-default cartBtn hvr-icon-pulse-grow-cart"></button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+
+  <main class="margined-2">
+    <div class="fluid-container">
+      <div class="row">
+        <div class="menu col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 ">
+          <ul class="menu-list row">
+            <li class="menu-item col-xs-3 centered"><a href="../index.html">Things</a></li>
+            <li class="menu-item col-xs-3 centered"><a href="../html/contacts.html">Contacts</a></li>
+            <li class="menu-item col-xs-3 centered"><a href="#/">FAQ</a></li>
+            <li class="menu-item col-xs-3 centered"><a href="#/">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="fluid-container">
+      <div class="row">
+        <div class="search col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+          <div class="searchBar margined-3 centered">
+            <form action="#/" method="get" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control input-search" placeholder="Search">
+                <button type="submit" class="btn btn-default">Search</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--
+
+        <li class="cart-item">
+          <a href="#"><img class="img-responsive" src="img/3.jpg" alt="image"/></a>
+          <ul class="cart-item-info">
+            <li class="cart-item-name">Item name2</li>
+            <li class="quantity"><span>x </span>20</li>
+            <li class="cart-item-price"><span>$</span>19.99</li>
+          </ul>
+        </li>
+
+      -->
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+          <table class="table">
+            <caption>My cart</caption>
+            <button type="submit" class="btn btn-default checkOut">CHECKOUT</button>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="image col-xs-2 col-sm-3">
+                  <a href="../html/itemInfo.html"><img class="img-responsive" src="../img/3.jpg" alt="image"/></a>
+                </td>
+                <td class="infoCol col-xs-5 col-sm-3">
+                  <ul class="infoContainer">
+                    <li>Item name</li>
+                    <li>Price: $19.99</li>
+                  </ul>
+                </td>
+                <td class="quantity col-xs-3 col-sm-3">20</td>
+                <td class="price col-xs-2 col-sm-3">$19.99</td>
+              </tr>
+              <tr>
+                <td class="image col-xs-2 col-sm-3">
+                  <a href="../html/itemInfo.html"><img class="img-responsive" src="../img/4.jpg" alt="image"/></a>
+                </td>
+                <td class="infoCol col-xs-5 col-sm-3">
+                  <ul class="infoContainer">
+                    <li>Item name</li>
+                    <li>Price: $19.99</li>
+                  </ul>
+                </td>
+                <td class="quantity col-xs-3 col-sm-3">20</td>
+                <td class="price col-xs-2 col-sm-3">$19.99</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--
+          <ul class="cart-items">
+            <li class="cart-item">
+              <a href="../html/itemInfo.html"><img class="img-responsive" src="../img/3.jpg" alt="image"/></a>
+              <ul class="cart-item-info">
+                <li class="cart-item-name">Item name2</li>
+                <li class="quantity"><span>x </span>20</li>
+                <li class="cart-item-price"><span>$</span>19.99</li>
+              </ul>
+            </li>
+
+            <li class="cart-item">
+              <a href="../html/itemInfo.html"><img class="img-responsive" src="../img/3.jpg" alt="image"/></a>
+              <ul class="cart-item-info">
+                <li class="cart-item-name">Item name2</li>
+                <li class="quantity"><span>x </span>20</li>
+                <li class="cart-item-price"><span>$</span>19.99</li>
+              </ul>
+            </li>
+
+            <li class="cart-item">
+              <a href="../html/itemInfo.html"><img class="img-responsive" src="../img/3.jpg" alt="image"/></a>
+              <ul class="cart-item-info">
+                <li class="cart-item-name">Item name2</li>
+                <li class="quantity"><span>x </span>20</li>
+                <li class="cart-item-price"><span>$</span>19.99</li>
+              </ul>
+            </li>
+
+            <li class="cart-item">
+              <a href="../html/itemInfo.html"><img class="img-responsive" src="../img/3.jpg" alt="image"/></a>
+              <ul class="cart-item-info">
+                <li class="cart-item-name">Item name2</li>
+                <li class="quantity"><span>x </span>20</li>
+                <li class="cart-item-price"><span>$</span>19.99</li>
+              </ul>
+            </li>
+          </ul>-->
+        </div>
+        <div class="clear"></div>
+        <p class="subtotal">Subtotal: $1000</p>
+      </div>
+    </div>
+
+  </main>
+
+  <body>
+  </body>
+
+  <footer>
+
+    <div class="fluid-container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="copyrights col-xs-6 col-md-offset-0 col-lg-5 col-lg-offset-1">
+            <p>&copy; 2016 by Thingy Shop. Created by <a href="https://ua.linkedin.com/in/dvasylenko">Daniyil Vasylenko</a></p>
+            <p>Many thanks to Noun Project for a bag icon, created by Zlatko Najdenovski</p>
+          </div>
+          <ul class="social col-xs-6 col-sm-6 col-md-6 col-lg-5">
+            <li class="margined-b"><a class="hvr-ripple-out" href="#/"><i class="fa fa-vk fa-2x fa-fw"></i></a></li>
+            <li class="margined-b"><a class="hvr-ripple-out" href="#/"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+            <li class="margined-b"><a class="hvr-ripple-out" href="#/"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="space"></div>
+    </div>
+
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/cart.js"></script>
+  </footer>
+
+
+</html>

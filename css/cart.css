@@ -4431,110 +4431,23 @@ footer .social {
 
   .top-menu-list {
     right: 0px !important; } }
-body article.contactsInfo .header {
-  font-weight: bold;
-  font-size: 20px; }
-body article.contactsInfo .wrapper .image-container {
-  max-width: 300px;
-  margin: 0 auto; }
-  body article.contactsInfo .wrapper .image-container img {
-    max-width: 100%; }
-body article.contactsInfo .middle-wrapper .info ul {
-  padding: 35px 55px;
-  color: #424242;
-  border: solid 1px #ddd;
-  border-radius: 4px;
-  text-align: left;
-  margin: 20px;
-  list-style-type: none;
+main .fluid-container div[class*="col"] .table caption {
+  font-size: 30px; }
+main .fluid-container div[class*="col"] .table tbody tr .image a {
   display: inline-block; }
-  body article.contactsInfo .middle-wrapper .info ul li {
-    border-bottom: solid 1px #ddd; }
-  body article.contactsInfo .middle-wrapper .info ul .header {
-    font-size: 30px;
-    position: relative;
-    top: -10px;
-    border: none;
-    font-weight: 100; }
-  body article.contactsInfo .middle-wrapper .info ul .item-info {
-    font-weight: bold;
-    margin-top: 5px; }
-    body article.contactsInfo .middle-wrapper .info ul .item-info span {
-      font-weight: 400; }
-  body article.contactsInfo .middle-wrapper .info ul .caption {
-    position: relative;
-    bottom: -10px;
-    border: none;
-    font-weight: 100; }
-body article.contactsInfo section.social {
-  top: -10px; }
-  body article.contactsInfo section.social header {
-    color: #424242; }
-  body article.contactsInfo section.social .icons {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0; }
-    body article.contactsInfo section.social .icons .icon {
-      display: inline;
-      cursor: pointer;
-      font-size: 30px;
-      margin-right: 10px; }
-    body article.contactsInfo section.social .icons .fb {
-      color: #3b5998; }
-      body article.contactsInfo section.social .icons .fb:hover {
-        color: #4c7aa9; }
-    body article.contactsInfo section.social .icons .gplus {
-      color: #dc4e41; }
-      body article.contactsInfo section.social .icons .gplus:hover {
-        color: #ed5f52; }
-    body article.contactsInfo section.social .icons .vk {
-      color: #45668e; }
-      body article.contactsInfo section.social .icons .vk:hover {
-        color: #56779f; }
-    body article.contactsInfo section.social .icons .pin {
-      color: #bd081c; }
-      body article.contactsInfo section.social .icons .pin:hover {
-        color: #ce192d; }
-    body article.contactsInfo section.social .icons .insta {
-      color: #3f729b; }
-      body article.contactsInfo section.social .icons .insta:hover {
-        color: #5083ac; }
-    body article.contactsInfo section.social .icons .twit {
-      color: #55acee; }
-      body article.contactsInfo section.social .icons .twit:hover {
-        color: #66bdff; }
-body article.contactsInfo .quotes ul {
-  list-style-type: none; }
-  body article.contactsInfo .quotes ul li {
-    text-align: both;
-    position: relative;
-    display: inline-block;
-    margin-right: 15px;
-    max-width: 250px;
-    padding: 10px;
-    border: solid 1px #ddd;
-    border-radius: 4px; }
-    body article.contactsInfo .quotes ul li hr {
-      margin-top: 5px;
-      margin-bottom: 5px; }
-    body article.contactsInfo .quotes ul li p {
-      margin: 0; }
-    body article.contactsInfo .quotes ul li .caption {
-      position: relative;
-      display: inline-block;
-      width: 100%;
-      margin-top: 5px; }
-      body article.contactsInfo .quotes ul li .caption .author, body article.contactsInfo .quotes ul li .caption .date {
-        color: #9E9E9E;
-        float: right;
-        font-weight: bold;
-        color: #2C2C2B; }
-      body article.contactsInfo .quotes ul li .caption .date {
-        float: left;
-        position: relative;
-        bottom: -4px;
-        color: #9E9E9E;
-        font-size: 12px; }
+  main .fluid-container div[class*="col"] .table tbody tr .image a img {
+    float: left;
+    max-width: 200px;
+    max-height: 200px; }
+main .fluid-container div[class*="col"] .table tbody tr .infoCol .infoContainer {
+  list-style-type: none;
+  padding: 0; }
+main .fluid-container div[class*="col"] .table tbody tr .subtotal {
+  text-align: right; }
 
-/*# sourceMappingURL=contacts.css.map */
+@media (max-width: 768px) {
+  main .fluid-container div[class*="col"] .table tbody tr .image a img {
+    max-height: none;
+    max-width: 100%; } }
+
+/*# sourceMappingURL=cart.css.map */

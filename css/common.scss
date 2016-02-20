@@ -100,6 +100,7 @@ html{
 header{
   .label{
     .row{
+      position: relative;
       .logo{
         display:inline-block;
         height:150px;
@@ -141,6 +142,39 @@ header{
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
       }
+
+      .top-menu-list{
+        position: absolute;
+        bottom: 0;
+        padding: 0;
+        right: 10%;
+        margin-bottom:0;
+        .menu-item{
+          border: none;
+          margin: 0px 5px 0px 5px;
+          display:inline;
+        }
+        .cart{
+          line-height: 2.5;
+          display:inline-block;
+          position: relative;
+          top: -1px;
+
+          .cartBtn{
+            border-color: $col-gray-border;
+            padding: 8px 13px;
+            font-size: $font-size;
+            color: $col-success;
+          }
+        } //cart
+        .favourites{
+          .favBtn{
+            border-color: $col-gray-border;
+            padding: 8px 13px;
+            font-size: $font-size;
+          }
+        }
+      }//menu-default
     } //row
   } //label
 } //header
@@ -168,6 +202,7 @@ main{
               font-weight: 400;
               border-top: solid 1px $col-gray;
               border-bottom: solid 1px $col-gray;
+              transition: all 0.2s ease;
               a{
                 display:block;
                 text-decoration: none;
@@ -175,37 +210,15 @@ main{
                   text-decoration: none;
                 }
               }
+              &:hover{
+                background-color: $col-pink;
+                a{
+                  color: white;
+                }
+                transition: all 0.5s ease;
+              }
             } //menu-item
           } //menu-list
-      }
-
-      .menu{
-        .top-menu-list{
-          @extend .menu-list;
-          .menu-item{
-            border: none;
-          }
-          .cart{
-            line-height: 2.5;
-            display:inline-block;
-            position: relative;
-            top: -1px;
-
-            .cartBtn{
-              border-color: $col-gray-border;
-              padding: 8px 13px;
-              font-size: $font-size;
-              color: $col-success;
-            }
-          } //cart
-          .favourites{
-            .favBtn{
-              border-color: $col-gray-border;
-              padding: 8px 13px;
-              font-size: $font-size;
-            }
-          }
-        }//menu-default
       }
     } //row
   } //flui-container
@@ -515,6 +528,7 @@ footer{
           }
         }
     }
+
 }
 
 @media screen and (max-width: 385px) and (orientation:portrait) {
@@ -628,5 +642,9 @@ footer{
 @media screen and (max-width: 767px){
   #current-item-image{
     margin: 0 auto;
+  }
+
+  .top-menu-list{
+    right: 0px !important;
   }
 }
