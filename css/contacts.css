@@ -4120,7 +4120,7 @@ header .label .row {
     position: absolute;
     bottom: 0;
     padding: 0;
-    right: 10%;
+    right: 10% !important;
     margin-bottom: 0; }
     header .label .row .top-menu-list .menu-item {
       border: none;
