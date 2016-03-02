@@ -4034,11 +4034,27 @@
 .margined-3 {
   margin-top: 30px; }
 
+.margined-4 {
+  margin-top: 40px; }
+
 .margined-xl {
   margin-top: 50px; }
 
 .margined-xxl {
   margin-top: 100px; }
+
+.pinkButton {
+  border-radius: 4px;
+  width: 100%;
+  padding: 15px 12px;
+  background-color: #F48FB1;
+  color: white;
+  font-size: 16px;
+  font-family: "Raleway"; }
+  .pinkButton:hover, .pinkButton:focus {
+    background-color: #F06292;
+    color: white;
+    transition: all 0.5s ease; }
 
 .row {
   margin: 0; }
@@ -4335,7 +4351,6 @@ footer .social {
     opacity: 0; }
   100% {
     opacity: 1; } }
-/* Example Media Query */
 @media screen and (min-height: 800px) and (orientation: landscape) {
   .pushy {
     width: 350px; }
@@ -4524,7 +4539,7 @@ footer .social {
       float: none; }
   .main-info .right-part #addToCart {
     display: block;
-    border-radius: 0;
+    border-radius: 4px;
     width: 100%;
     padding: 15px 12px;
     background-color: #F48FB1;

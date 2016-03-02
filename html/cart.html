@@ -83,15 +83,17 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-10 col-lg-offset-1">
 
-          <table class="table">
-            <caption>My cart</caption>
-            <button type="submit" class="btn btn-default checkOut">CHECKOUT</button>
+          <div class="caption">
+            <p>My Cart</p>
+            <button type="button" class="btn pinkButton">CHECKOUT</button>
+          </div>
+          <table class="table table-condensed margined-2">
             <thead>
               <tr>
-                <th>Product</th>
-                <th>Item</th>
-                <th>Quantity</th>
-                <th>Total</th>
+                <th style="width: 18%">Product</th>
+                <th style="width: 62%">Item</th>
+                <th style="width: 10%; text-align:center;">Quantity</th>
+                <th style="width: 10%; text-align:center;">Total</th>
               </tr>
             </thead>
             <tbody>
@@ -101,11 +103,25 @@
                 </td>
                 <td class="infoCol col-xs-5 col-sm-3">
                   <ul class="infoContainer">
-                    <li>Item name</li>
+                    <li class="title">Item name</li>
                     <li>Price: $19.99</li>
                   </ul>
                 </td>
-                <td class="quantity col-xs-3 col-sm-3">20</td>
+                <td class="quantity col-xs-3 col-sm-3">
+                  <div class="input-group">
+                      <span class="input-group-btn left-span">
+                          <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                              <span class="glyphicon glyphicon-minus"></span>
+                          </button>
+                      </span>
+                      <input id="quantity-input" type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                      <span class="input-group-btn right-span">
+                          <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                              <span class="glyphicon glyphicon-plus"></span>
+                          </button>
+                      </span>
+                  </div>
+                </td>
                 <td class="price col-xs-2 col-sm-3">$19.99</td>
               </tr>
               <tr>
@@ -114,56 +130,33 @@
                 </td>
                 <td class="infoCol col-xs-5 col-sm-3">
                   <ul class="infoContainer">
-                    <li>Item name</li>
+                    <li class="title">Item name</li>
                     <li>Price: $19.99</li>
                   </ul>
                 </td>
-                <td class="quantity col-xs-3 col-sm-3">20</td>
+                <td class="quantity col-xs-3 col-sm-3">
+                  <div class="input-group">
+                      <span class="input-group-btn left-span">
+                          <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[2]">
+                              <span class="glyphicon glyphicon-minus"></span>
+                          </button>
+                      </span>
+                      <input id="quantity-input1" type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="10">
+                      <span class="input-group-btn right-span">
+                          <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
+                              <span class="glyphicon glyphicon-plus"></span>
+                          </button>
+                      </span>
+                  </div>
+                </td>
                 <td class="price col-xs-2 col-sm-3">$19.99</td>
               </tr>
             </tbody>
           </table>
-          <!--
-          <ul class="cart-items">
-            <li class="cart-item">
-              <a href="../html/itemInfo.html"><img class="img-responsive" src="../img/3.jpg" alt="image"/></a>
-              <ul class="cart-item-info">
-                <li class="cart-item-name">Item name2</li>
-                <li class="quantity"><span>x </span>20</li>
-                <li class="cart-item-price"><span>$</span>19.99</li>
-              </ul>
-            </li>
-
-            <li class="cart-item">
-              <a href="../html/itemInfo.html"><img class="img-responsive" src="../img/3.jpg" alt="image"/></a>
-              <ul class="cart-item-info">
-                <li class="cart-item-name">Item name2</li>
-                <li class="quantity"><span>x </span>20</li>
-                <li class="cart-item-price"><span>$</span>19.99</li>
-              </ul>
-            </li>
-
-            <li class="cart-item">
-              <a href="../html/itemInfo.html"><img class="img-responsive" src="../img/3.jpg" alt="image"/></a>
-              <ul class="cart-item-info">
-                <li class="cart-item-name">Item name2</li>
-                <li class="quantity"><span>x </span>20</li>
-                <li class="cart-item-price"><span>$</span>19.99</li>
-              </ul>
-            </li>
-
-            <li class="cart-item">
-              <a href="../html/itemInfo.html"><img class="img-responsive" src="../img/3.jpg" alt="image"/></a>
-              <ul class="cart-item-info">
-                <li class="cart-item-name">Item name2</li>
-                <li class="quantity"><span>x </span>20</li>
-                <li class="cart-item-price"><span>$</span>19.99</li>
-              </ul>
-            </li>
-          </ul>-->
+          <p class="subtotal">Subtotal: $1000</p>
+          <button type="button" class="btn pinkButton margined-2">CHECKOUT</button>
         </div>
-        <div class="clear"></div>
-        <p class="subtotal">Subtotal: $1000</p>
+
       </div>
     </div>
 
@@ -172,7 +165,7 @@
   <body>
   </body>
 
-  <footer>
+  <footer class="margined-xxl">
 
     <div class="fluid-container">
       <div class="row">

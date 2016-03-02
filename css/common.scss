@@ -10,6 +10,7 @@ $col-success: #66BB6A;
 $col-pink: #F48FB1;
 $col-red : #C62828;
 $col-pink-hover: #F06292;
+$col-pink-pressed: #F06292;
 $font-main : "Raleway";
 $font-bg-size : 30px;
 $font-size : 20px;
@@ -58,12 +59,37 @@ $push-width: 350px;
 .margined-3{
   margin-top: 30px;
 }
+
+.margined-4{
+  margin-top: 40px;
+}
+
 .margined-xl{
   margin-top: 50px;
 }
 
 .margined-xxl{
   margin-top: 100px;
+}
+
+@mixin margined ($multiplier){
+  $margin-top: $multiplier * 10;
+}
+
+.pinkButton{
+  border-radius: 4px;
+  width: 100%;
+  padding: 15px 12px;
+  background-color: $col-pink;
+  color: white;
+  font-size: $font-sm-size;
+  font-family: $font-main;
+  &:hover, &:focus{
+    background-color: $col-pink-hover;
+    color: white;
+    transition: all 0.5s ease;
+  }
+
 }
 
 .row{
@@ -281,7 +307,6 @@ footer{
 } //footer
 
 //cart pushy
-
 .pushy{
   background: $col-charcoal;
   visibility: collapse;
@@ -461,7 +486,7 @@ footer{
     100% { opacity: 1; }
 }
 
-/* Example Media Query */
+
 @media screen and (min-height:800px) and (orientation:landscape) {
   .pushy{
       width: 350px;

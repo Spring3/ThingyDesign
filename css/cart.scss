@@ -4,12 +4,20 @@
 main{
   .fluid-container{
     div[class*="col"]{
-      .table{
-        caption{
+      .caption{
+        p{
           font-size: $font-bg-size;
+          display: inline;
+          line-height: 2;
         }
-        .checkOut{
-
+      }
+      .table{
+        margin-bottom: 0;
+        thead{
+          width: 95%;
+          th{
+            font-size: $font-sm-size;
+          }
         }
         tbody{
           tr{
@@ -22,21 +30,56 @@ main{
                   max-height: 200px;
                 }
               }
+              padding: 20px 0px !important;
             }
             .infoCol{
               .infoContainer{
+                font-size: $font-sm-size;
                 list-style-type: none;
                 padding: 0;
+
+                .title{
+                  font-size: $font-size;
+                }
+
               }
+              padding: 20px 0px !important;
             }
-            .subtotal{
-              text-align: right;
+            .quantity{
+              text-align: center;
+              input[id*='quantity-input']{
+                text-align: center;
+                font-size: $font-sm-size;
+              }
+              padding: 20px 10px !important;
+            }
+            .price{
+              @extend .quantity;
+              font-weight: bold;
+              font-size: $font-size;
+              padding: 20px 10px !important;
             }
           } //tr
         } //tbody
       }//table
+      .subtotal{
+        display:block;
+        width:100%;
+        text-align: right;
+        font-family: "Raleway";
+        font-size: $font-size;
+        font-weight: bold;
+      }
     }
   }
+}
+
+.pinkButton{
+  max-width: 200px;
+  right: 15px;
+  padding: 10px;
+  top: 8px;
+  float:right;
 }
 
 @media (max-width: 768px) {

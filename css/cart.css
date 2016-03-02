@@ -4034,11 +4034,27 @@
 .margined-3 {
   margin-top: 30px; }
 
+.margined-4 {
+  margin-top: 40px; }
+
 .margined-xl {
   margin-top: 50px; }
 
 .margined-xxl {
   margin-top: 100px; }
+
+.pinkButton {
+  border-radius: 4px;
+  width: 100%;
+  padding: 15px 12px;
+  background-color: #F48FB1;
+  color: white;
+  font-size: 16px;
+  font-family: "Raleway"; }
+  .pinkButton:hover, .pinkButton:focus {
+    background-color: #F06292;
+    color: white;
+    transition: all 0.5s ease; }
 
 .row {
   margin: 0; }
@@ -4335,7 +4351,6 @@ footer .social {
     opacity: 0; }
   100% {
     opacity: 1; } }
-/* Example Media Query */
 @media screen and (min-height: 800px) and (orientation: landscape) {
   .pushy {
     width: 350px; }
@@ -4431,19 +4446,56 @@ footer .social {
 
   .top-menu-list {
     right: 0px !important; } }
-main .fluid-container div[class*="col"] .table caption {
-  font-size: 30px; }
-main .fluid-container div[class*="col"] .table tbody tr .image a {
-  display: inline-block; }
-  main .fluid-container div[class*="col"] .table tbody tr .image a img {
-    float: left;
-    max-width: 200px;
-    max-height: 200px; }
-main .fluid-container div[class*="col"] .table tbody tr .infoCol .infoContainer {
-  list-style-type: none;
-  padding: 0; }
-main .fluid-container div[class*="col"] .table tbody tr .subtotal {
-  text-align: right; }
+main .fluid-container div[class*="col"] .caption p {
+  font-size: 30px;
+  display: inline;
+  line-height: 2; }
+main .fluid-container div[class*="col"] .table {
+  margin-bottom: 0; }
+  main .fluid-container div[class*="col"] .table thead {
+    width: 95%; }
+    main .fluid-container div[class*="col"] .table thead th {
+      font-size: 16px; }
+  main .fluid-container div[class*="col"] .table tbody tr .image {
+    padding: 20px 0px !important; }
+    main .fluid-container div[class*="col"] .table tbody tr .image a {
+      display: inline-block; }
+      main .fluid-container div[class*="col"] .table tbody tr .image a img {
+        float: left;
+        max-width: 200px;
+        max-height: 200px; }
+  main .fluid-container div[class*="col"] .table tbody tr .infoCol {
+    padding: 20px 0px !important; }
+    main .fluid-container div[class*="col"] .table tbody tr .infoCol .infoContainer {
+      font-size: 16px;
+      list-style-type: none;
+      padding: 0; }
+      main .fluid-container div[class*="col"] .table tbody tr .infoCol .infoContainer .title {
+        font-size: 20px; }
+  main .fluid-container div[class*="col"] .table tbody tr .quantity, main .fluid-container div[class*="col"] .table tbody tr .price {
+    text-align: center;
+    padding: 20px 10px !important; }
+    main .fluid-container div[class*="col"] .table tbody tr .quantity input[id*='quantity-input'], main .fluid-container div[class*="col"] .table tbody tr .price input[id*='quantity-input'] {
+      text-align: center;
+      font-size: 16px; }
+  main .fluid-container div[class*="col"] .table tbody tr .price {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 10px !important; }
+main .fluid-container div[class*="col"] .subtotal {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: bold; }
+
+.pinkButton {
+  max-width: 200px;
+  right: 15px;
+  padding: 10px;
+  top: 8px;
+  float: right; }
 
 @media (max-width: 768px) {
   main .fluid-container div[class*="col"] .table tbody tr .image a img {

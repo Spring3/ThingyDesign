@@ -4034,11 +4034,27 @@
 .margined-3, main .fluid-container .row .items-section .main-section .item {
   margin-top: 30px; }
 
+.margined-4 {
+  margin-top: 40px; }
+
 .margined-xl {
   margin-top: 50px; }
 
 .margined-xxl {
   margin-top: 100px; }
+
+.pinkButton {
+  border-radius: 4px;
+  width: 100%;
+  padding: 15px 12px;
+  background-color: #F48FB1;
+  color: white;
+  font-size: 16px;
+  font-family: "Raleway"; }
+  .pinkButton:hover, .pinkButton:focus {
+    background-color: #F06292;
+    color: white;
+    transition: all 0.5s ease; }
 
 .row {
   margin: 0; }
@@ -4335,7 +4351,6 @@ footer .social {
     opacity: 0; }
   100% {
     opacity: 1; } }
-/* Example Media Query */
 @media screen and (min-height: 800px) and (orientation: landscape) {
   .pushy {
     width: 350px; }
@@ -4512,7 +4527,8 @@ main {
     color: #424242; }
 
 body .modal .modal-dialog .modal-content .modal-body .modal-left #current-item-image {
-  width: 100%; }
+  width: 100%;
+  border-radius: 4px; }
 body .modal .modal-dialog .modal-content .modal-body .modal-left .image-list {
   list-style-type: none;
   padding: 0;
@@ -4526,9 +4542,11 @@ body .modal .modal-dialog .modal-content .modal-body .modal-left .image-list {
       width: 100%; }
       body .modal .modal-dialog .modal-content .modal-body .modal-left .image-list li .item-image img {
         width: 50px;
-        height: 50px; }
+        height: 50px;
+        border-radius: 4px; }
     body .modal .modal-dialog .modal-content .modal-body .modal-left .image-list li .image-selected {
-      border: solid 1px #424242; }
+      border: solid 1px #424242;
+      border-radius: 4px; }
 body .modal .modal-dialog .modal-content .modal-body .modal-right #itemName {
   font-size: 20px;
   font-family: "Raleway";
