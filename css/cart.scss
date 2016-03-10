@@ -33,13 +33,24 @@ main{
               padding: 20px 0px !important;
             }
             .infoCol{
+              position:relative;
               .infoContainer{
                 font-size: $font-sm-size;
                 list-style-type: none;
                 padding: 0;
+                padding-left: 5px !important;
 
                 .title{
                   font-size: $font-size;
+                }
+
+                .removeItem{
+                  position:absolute;
+                  bottom:20px;
+                  a{
+                    color: $col-gray;
+                    font-size: $font-xs-size;
+                  }
                 }
 
               }
@@ -52,6 +63,10 @@ main{
                 font-size: $font-sm-size;
               }
               padding: 20px 10px !important;
+              .input-group{
+                max-width:150px;
+                margin: 0 auto;
+              }
             }
             .price{
               @extend .quantity;
@@ -66,11 +81,24 @@ main{
         display:block;
         width:100%;
         text-align: right;
-        font-family: "Raleway";
-        font-size: $font-size;
+        font-family: $font-main;
+        font-size: $font-size + 4;
         font-weight: bold;
       }
     }
+  }
+
+  .inline-wrapper{
+    display: inline-block;
+    width: 100%;
+
+  }
+
+  .input-nPost{
+    max-width:400px;
+    display:inline;
+    padding: 21px 10px;
+    float:right;
   }
 }
 

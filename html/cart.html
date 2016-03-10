@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/hint.min.css"/>
     <link rel="stylesheet" href="../css/cart.css"/>
   </head>
 
@@ -81,19 +82,22 @@
       -->
 
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 margined-2">
 
           <div class="caption">
             <p>My Cart</p>
-            <button type="button" class="btn pinkButton">CHECKOUT</button>
+            <div class="inline-wrapper">
+              <button type="button" class="btn pinkButton">CHECKOUT</button>
+              <input type="text" class="form-control input-nPost" placeholder="Адрес пункта доставки 'Нова пошта'">
+            </div>
           </div>
-          <table class="table table-condensed margined-2">
+          <table class="table margined-2">
             <thead>
               <tr>
-                <th style="width: 18%">Product</th>
-                <th style="width: 62%">Item</th>
-                <th style="width: 10%; text-align:center;">Quantity</th>
-                <th style="width: 10%; text-align:center;">Total</th>
+                <th>Product</th>
+                <th>Item</th>
+                <th style="text-align:center;">Quantity</th>
+                <th style="text-align:center;">Total</th>
               </tr>
             </thead>
             <tbody>
@@ -105,6 +109,7 @@
                   <ul class="infoContainer">
                     <li class="title">Item name</li>
                     <li>Price: $19.99</li>
+                    <li class="removeItem"><a href="#">Remove item</a></li>
                   </ul>
                 </td>
                 <td class="quantity col-xs-3 col-sm-3">
@@ -132,6 +137,7 @@
                   <ul class="infoContainer">
                     <li class="title">Item name</li>
                     <li>Price: $19.99</li>
+                    <li class="removeItem"><a href="#">Remove item</a></li>
                   </ul>
                 </td>
                 <td class="quantity col-xs-3 col-sm-3">
@@ -154,7 +160,10 @@
             </tbody>
           </table>
           <p class="subtotal">Subtotal: $1000</p>
-          <button type="button" class="btn pinkButton margined-2">CHECKOUT</button>
+          <div class="inline-wrapper  margined-2">
+            <button type="button" class="btn pinkButton">CHECKOUT</button>
+            <input type="text" class="form-control input-nPost" placeholder="Адрес пункта доставки 'Нова пошта'">
+          </div>
         </div>
 
       </div>
