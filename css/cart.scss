@@ -77,13 +77,13 @@ main{
           } //tr
         } //tbody
       }//table
-      .subtotal{
-        display:block;
-        width:100%;
-        text-align: right;
-        font-family: $font-main;
-        font-size: $font-size + 4;
-        font-weight: bold;
+
+      .shipping{
+        color: $col-pink;
+      }
+
+      .total{
+        color: $col-pink-pressed;
       }
     }
   }
@@ -91,6 +91,7 @@ main{
   .inline-wrapper{
     display: inline-block;
     width: 100%;
+    text-align:center;
 
   }
 
@@ -98,7 +99,6 @@ main{
     max-width:400px;
     display:inline;
     padding: 21px 10px;
-    float:right;
   }
 }
 
@@ -107,7 +107,6 @@ main{
   right: 15px;
   padding: 10px;
   top: 8px;
-  float:right;
 }
 
 @media (max-width: 768px) {

@@ -4018,6 +4018,9 @@
 .margined-b {
   margin: 0px 5px; }
 
+.text-green {
+  color: #009688; }
+
 .like {
   z-index: 40; }
 
@@ -4136,10 +4139,12 @@ header .label .row {
         padding: 8px 13px;
         font-size: 20px;
         color: #66BB6A; }
-    header .label .row .top-menu-list .favourites .favBtn {
-      border-color: #ddd;
-      padding: 8px 13px;
-      font-size: 20px; }
+    header .label .row .top-menu-list .favourites {
+      display: inline-block; }
+      header .label .row .top-menu-list .favourites .favBtn {
+        border-color: #ddd;
+        padding: 8px 13px;
+        font-size: 20px; }
 
 main {
   font-family: "Raleway"; }

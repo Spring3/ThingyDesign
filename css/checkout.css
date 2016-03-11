@@ -4018,6 +4018,9 @@
 .margined-b {
   margin: 0px 5px; }
 
+.text-green {
+  color: #009688; }
+
 .like {
   z-index: 40; }
 
@@ -4136,10 +4139,12 @@ header .label .row {
         padding: 8px 13px;
         font-size: 20px;
         color: #66BB6A; }
-    header .label .row .top-menu-list .favourites .favBtn {
-      border-color: #ddd;
-      padding: 8px 13px;
-      font-size: 20px; }
+    header .label .row .top-menu-list .favourites {
+      display: inline-block; }
+      header .label .row .top-menu-list .favourites .favBtn {
+        border-color: #ddd;
+        padding: 8px 13px;
+        font-size: 20px; }
 
 main {
   font-family: "Raleway"; }
@@ -4446,5 +4451,60 @@ footer .social {
 
   .top-menu-list {
     right: 0px !important; } }
+body .fluid-container div[class*="col"] h2 {
+  text-align: center; }
+body .fluid-container div[class*="col"] .table {
+  margin-bottom: 0; }
+  body .fluid-container div[class*="col"] .table thead {
+    width: 95%; }
+    body .fluid-container div[class*="col"] .table thead th {
+      font-size: 16px; }
+  body .fluid-container div[class*="col"] .table tbody tr .image {
+    padding: 20px 0px !important; }
+    body .fluid-container div[class*="col"] .table tbody tr .image a {
+      display: inline-block; }
+      body .fluid-container div[class*="col"] .table tbody tr .image a img {
+        float: left;
+        max-width: 200px;
+        max-height: 200px; }
+  body .fluid-container div[class*="col"] .table tbody tr .infoCol {
+    position: relative;
+    padding: 20px 0px !important; }
+    body .fluid-container div[class*="col"] .table tbody tr .infoCol .infoContainer {
+      font-size: 16px;
+      list-style-type: none;
+      padding: 0;
+      padding-left: 5px !important; }
+      body .fluid-container div[class*="col"] .table tbody tr .infoCol .infoContainer .title {
+        font-size: 20px; }
+  body .fluid-container div[class*="col"] .table tbody tr .quantity, body .fluid-container div[class*="col"] .table tbody tr .price {
+    text-align: center;
+    padding: 20px 10px !important; }
+  body .fluid-container div[class*="col"] .table tbody tr .price {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 10px !important; }
+body .fluid-container div[class*="col"] .shipping {
+  color: #F48FB1; }
+body .fluid-container div[class*="col"] .total {
+  color: #F06292; }
+body .inline-wrapper {
+  width: 100%;
+  text-align: center; }
+body .input-nPost {
+  max-width: 400px;
+  display: inline;
+  padding: 21px 10px; }
+
+.pinkButton {
+  max-width: 200px;
+  right: 15px;
+  padding: 10px;
+  top: 8px; }
+
+@media (max-width: 768px) {
+  main .fluid-container div[class*="col"] .table tbody tr .image a img {
+    max-height: none;
+    max-width: 100%; } }
 
 /*# sourceMappingURL=checkout.css.map */

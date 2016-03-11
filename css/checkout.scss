@@ -1,1 +1,110 @@
 @import "common";
+
+
+body{
+  .fluid-container{
+    div[class*="col"]{
+      h2{
+        text-align: center;
+      }
+      .table{
+        margin-bottom: 0;
+        thead{
+          width: 95%;
+          th{
+            font-size: $font-sm-size;
+          }
+        }
+        tbody{
+          tr{
+            .image{
+              a{
+                display: inline-block;
+                img{
+                  float: left;
+                  max-width: 200px;
+                  max-height: 200px;
+                }
+              }
+              padding: 20px 0px !important;
+            }
+            .infoCol{
+              position:relative;
+              .infoContainer{
+                font-size: $font-sm-size;
+                list-style-type: none;
+                padding: 0;
+                padding-left: 5px !important;
+
+                .title{
+                  font-size: $font-size;
+                }
+              }
+              padding: 20px 0px !important;
+            }
+            .quantity{
+              text-align: center;
+              padding: 20px 10px !important;
+            }
+            .price{
+              @extend .quantity;
+              font-weight: bold;
+              font-size: $font-size;
+              padding: 20px 10px !important;
+            }
+
+          } //tr
+        } //tbody
+      }//table
+
+      .shipping{
+        color: $col-pink;
+      }
+
+      .total{
+        color: $col-pink-pressed;
+      }
+    }
+  }
+
+  .inline-wrapper{
+    width: 100%;
+    text-align: center;
+  }
+
+  .input-nPost{
+    max-width:400px;
+    display:inline;
+    padding: 21px 10px;
+  }
+}
+
+.pinkButton{
+  max-width: 200px;
+  right: 15px;
+  padding: 10px;
+  top: 8px;
+}
+
+@media (max-width: 768px) {
+  main{
+    .fluid-container{
+      div[class*="col"]{
+        .table{
+          tbody{
+            tr{
+              .image{
+                a{
+                  img{
+                    max-height: none;
+                    max-width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

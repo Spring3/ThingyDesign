@@ -86,10 +86,6 @@
 
           <div class="caption">
             <p>My Cart</p>
-            <div class="inline-wrapper">
-              <button type="button" class="btn pinkButton">CHECKOUT</button>
-              <input type="text" class="form-control input-nPost" placeholder="Адрес пункта доставки 'Нова пошта'">
-            </div>
           </div>
           <table class="table margined-2">
             <thead>
@@ -157,12 +153,23 @@
                 </td>
                 <td class="price col-xs-2 col-sm-3">$19.99</td>
               </tr>
+              <tr>
+                <td class="image col-xs-2 col-sm-3"></td>
+                <td class="infoCol col-xs-5 col-sm-3"></td>
+                <td class="quantity col-xs-3 col-sm-3"></td>
+                <td class="price shipping col-xs-2 col-sm-3">Shipping: $5</td>
+              </tr>
+              <tr>
+                <td class="image col-xs-2 col-sm-3"></td>
+                <td class="infoCol col-xs-5 col-sm-3"></td>
+                <td class="quantity col-xs-3 col-sm-3"></td>
+                <td class="price total col-xs-2 col-sm-3">Subtotal: $123</td>
+              </tr>
             </tbody>
           </table>
-          <p class="subtotal">Subtotal: $1000</p>
-          <div class="inline-wrapper  margined-2">
-            <button type="button" class="btn pinkButton">CHECKOUT</button>
+          <div class="inline-wrapper margined-2">
             <input type="text" class="form-control input-nPost" placeholder="Адрес пункта доставки 'Нова пошта'">
+            <button type="button" class="btn pinkButton" onclick="window.location = 'checkout.html'">CHECKOUT</button>
           </div>
         </div>
 

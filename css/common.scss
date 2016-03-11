@@ -9,6 +9,7 @@ $col-gray-border: #ddd;
 $col-success: #66BB6A;
 $col-pink: #F48FB1;
 $col-red : #C62828;
+$col-green: #009688;
 $col-pink-hover: #F06292;
 $col-pink-pressed: #F06292;
 $font-main : "Raleway";
@@ -37,6 +38,10 @@ $push-width: 350px;
 
 .margined-b{
   margin: 0px 5px;
+}
+
+.text-green{
+  color: $col-green;
 }
 
 .like{
@@ -194,6 +199,7 @@ header{
           }
         } //cart
         .favourites{
+          display:inline-block;
           .favBtn{
             border-color: $col-gray-border;
             padding: 8px 13px;

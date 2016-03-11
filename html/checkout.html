@@ -70,9 +70,65 @@
     </div>
   </main>
 
+  <body class="margined-2">
+    <div class="fluid-container">
+      <div class ="row">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+          <h2 class="text-green">Your order has been sent</h2>
+          <table class="table margined-4">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th style="text-align:center;">Quantity</th>
+                <th style="text-align:center;">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="infoCol col-xs-5 col-sm-3">
+                  <ul class="infoContainer">
+                    <li class="title">Item name</li>
+                    <li>Price: $19.99</li>
+                  </ul>
+                </td>
+                <td class="quantity col-xs-3 col-sm-3">2</td>
+                <td class="price col-xs-2 col-sm-3">
+                  $19.99 x 2 = $49.98
+                </td>
+              </tr>
+              <tr>
+                <td class="infoCol col-xs-5 col-sm-3">
+                  <ul class="infoContainer">
+                    <li class="title">Item name</li>
+                    <li>Price: $19.99</li>
+                  </ul>
+                </td>
+                <td class="quantity col-xs-3 col-sm-3">1</td>
+                <td class="price col-xs-2 col-sm-3">$19.99 x 1 = $19.99</td>
+              </tr>
+              <tr>
+                <td class="infoCol col-xs-5 col-sm-3">
+                </td>
+                <td class="quantity col-xs-3 col-sm-3"></td>
+                <td class="price shipping col-xs-2 col-sm-3">Shipping: $5</td>
+              </tr>
+              <tr>
+                <td class="infoCol col-xs-5 col-sm-3">
+                </td>
+                <td class="quantity col-xs-3 col-sm-3"></td>
+                <td class="price total col-xs-2 col-sm-3">Total: $64.97</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="inline-wrapper margined-2">
+            <input type="text" class="form-control input-nPost" placeholder="Email">
+            <button type="button" class="btn pinkButton">Send this info</button>
+          </div>
 
-
-  <body>
+          <h2 class="text-green margined-xl">Thank you for buying from us</h2>
+        </div>
+      </div>
+    </div>
   </body>
 
   <footer class="margined-xxl">

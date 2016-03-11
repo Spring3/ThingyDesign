@@ -4018,6 +4018,9 @@
 .margined-b {
   margin: 0px 5px; }
 
+.text-green {
+  color: #009688; }
+
 .like {
   z-index: 40; }
 
@@ -4136,10 +4139,12 @@ header .label .row {
         padding: 8px 13px;
         font-size: 20px;
         color: #66BB6A; }
-    header .label .row .top-menu-list .favourites .favBtn {
-      border-color: #ddd;
-      padding: 8px 13px;
-      font-size: 20px; }
+    header .label .row .top-menu-list .favourites {
+      display: inline-block; }
+      header .label .row .top-menu-list .favourites .favBtn {
+        border-color: #ddd;
+        padding: 8px 13px;
+        font-size: 20px; }
 
 main {
   font-family: "Raleway"; }
@@ -4493,28 +4498,24 @@ main .fluid-container div[class*="col"] .table {
     font-weight: bold;
     font-size: 20px;
     padding: 20px 10px !important; }
-main .fluid-container div[class*="col"] .subtotal {
-  display: block;
-  width: 100%;
-  text-align: right;
-  font-family: "Raleway";
-  font-size: 24px;
-  font-weight: bold; }
+main .fluid-container div[class*="col"] .shipping {
+  color: #F48FB1; }
+main .fluid-container div[class*="col"] .total {
+  color: #F06292; }
 main .inline-wrapper {
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 main .input-nPost {
   max-width: 400px;
   display: inline;
-  padding: 21px 10px;
-  float: right; }
+  padding: 21px 10px; }
 
 .pinkButton {
   max-width: 200px;
   right: 15px;
   padding: 10px;
-  top: 8px;
-  float: right; }
+  top: 8px; }
 
 @media (max-width: 768px) {
   main .fluid-container div[class*="col"] .table tbody tr .image a img {
