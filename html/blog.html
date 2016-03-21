@@ -1,20 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
-<meta lang="en" charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta lang="en" charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <head>
     <title>Thingy Shop</title>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/faq.css"/>
     <link rel="stylesheet" href="../css/hint.min.css"/>
-    <link rel="stylesheet" href="../css/checkout.css"/>
   </head>
 
   <header>
-
     <div class="label container">
       <div class="row">
         <div class="col-xs-12 col-sm-4 col-xs-offset-0 col-sm-offset-4">
@@ -25,6 +23,7 @@
           <div class="hline"></div>
           <p class="caption margined">Cool stuff for everyone</p>
         </div>
+
         <ul class="top-menu-list col-xs-2 col-xs-offset-10 col-sm-1 col-sm-offset-10 col-lg-1 col-lg-offset-10">
           <li class="menu-item favourites centered hint--top hint--rounded" data-hint="Favourites">
             <button type="submit" class="btn btn-default favBtn hvr-icon-pulse-grow-heart"></button>
@@ -43,12 +42,12 @@
   <main class="margined-2">
     <div class="fluid-container">
       <div class="row">
-        <div class="menu col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 ">
+        <div class="menu col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
           <ul class="menu-list row">
             <li class="menu-item col-xs-3 centered"><a href="../index.html">Things</a></li>
             <li class="menu-item col-xs-3 centered"><a href="../html/contacts.html">Contacts</a></li>
             <li class="menu-item col-xs-3 centered"><a href="../html/faq.html">FAQ</a></li>
-            <li class="menu-item col-xs-3 centered"><a href="../html/blog.html">Blog</a></li>
+            <li class="menu-item col-xs-3 centered"><a >Blog</a></li>
           </ul>
         </div>
       </div>
@@ -70,65 +69,54 @@
     </div>
   </main>
 
-  <body class="margined-2">
-    <div class="fluid-container">
-      <div class ="row">
-        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-          <h2 class="text-green">Your order has been sent</h2>
-          <table class="table margined-4">
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th style="text-align:center;">Quantity</th>
-                <th style="text-align:center;">Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="infoCol col-xs-5 col-sm-3">
-                  <ul class="infoContainer">
-                    <li class="title">Item name</li>
-                    <li>Price: $19.99</li>
-                  </ul>
-                </td>
-                <td class="quantity col-xs-3 col-sm-3">2</td>
-                <td class="price col-xs-2 col-sm-3">
-                  $19.99 x 2 = $49.98
-                </td>
-              </tr>
-              <tr>
-                <td class="infoCol col-xs-5 col-sm-3">
-                  <ul class="infoContainer">
-                    <li class="title">Item name</li>
-                    <li>Price: $19.99</li>
-                  </ul>
-                </td>
-                <td class="quantity col-xs-3 col-sm-3">1</td>
-                <td class="price col-xs-2 col-sm-3">$19.99 x 1 = $19.99</td>
-              </tr>
-              <tr>
-                <td class="infoCol col-xs-5 col-sm-3">
-                </td>
-                <td class="quantity col-xs-3 col-sm-3"></td>
-                <td class="price shipping col-xs-2 col-sm-3">Shipping: $5</td>
-              </tr>
-              <tr>
-                <td class="infoCol col-xs-5 col-sm-3">
-                </td>
-                <td class="quantity col-xs-3 col-sm-3"></td>
-                <td class="price total col-xs-2 col-sm-3">Total: $64.97</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="inline-wrapper margined-2">
-            <input type="text" class="form-control input-nPost" placeholder="Email">
-            <button type="button" class="btn pinkButton">Send this info</button>
+  <body>
+    <div class="container margined-2">
+
+      <div class="main-info">
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+               <h4 class="panel-title">
+                  <a id="Panel" data-toggle="collapse"  href="#Info">
+                     Blog entry 1
+                  </a>
+               </h4>
+            </div>
+
+            <div id="Info" class="panel-collapse collapse out">
+               <div class="panel-body">
+                  <p>Lorem ipsum blah-blah-blah</p>
+                  <img src="../img/1.jpg"></img>
+               </div>
+            </div>
+
+
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+             <h4 class="panel-title">
+                <a id="Panel1" data-toggle="collapse"  href="#Info1">
+                   Blog entry 2
+                </a>
+             </h4>
           </div>
 
-          <h2 class="text-green margined-xl">Thank you for buying from us</h2>
+          <div id="Info1" class="panel-collapse collapse out">
+             <div class="panel-body">
+                <p>Lorem ipsum blah-blah-blah</p>
+                <img src="../img/1.jpg"></img>
+             </div>
+          </div>
+
         </div>
       </div>
     </div>
+
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/faq.js"></script>
+
   </body>
 
   <footer class="margined-xxl">
@@ -150,7 +138,6 @@
       <div class="space"></div>
     </div>
 
-    <script src="../js/jquery-2.1.4.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/common.js"></script>
+  </footer>
+
 </html>

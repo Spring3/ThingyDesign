@@ -1,0 +1,18 @@
+@import "common";
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+.main-info{
+  text-align: center;
+  img{
+    max-height: 300px;
+    max-width: 300px;
+  }
+}
+
+.panel-body{
+  text-align: left;
+}

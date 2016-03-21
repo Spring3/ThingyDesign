@@ -1,1 +1,1 @@
-sass --watch index.scss:index.css itemInfo.scss:itemInfo.css contacts.scss:contacts.css cart.scss:cart.css checkout.scss:checkout.css
+sass --watch index.scss:index.css itemInfo.scss:itemInfo.css contacts.scss:contacts.css cart.scss:cart.css checkout.scss:checkout.css faq.scss:faq.css
